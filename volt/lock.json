@@ -1,485 +1,485 @@
 {
   "version": 2,
-  "trx_id": 81,
+  "trx_id": 83,
   "current_profile_name": "default",
   "repos": [
     {
       "type": "git",
-      "trx_id": 2,
+      "trx_id": 83,
       "path": "github.com/airblade/vim-gitgutter",
       "version": "1e60667322b7cd1bfcba98762fbba746a888d21a"
     },
     {
       "type": "git",
-      "trx_id": 3,
+      "trx_id": 83,
       "path": "github.com/altercation/vim-colors-solarized",
       "version": "528a59f26d12278698bb946f8fb82a63711eec21"
     },
     {
       "type": "git",
-      "trx_id": 4,
+      "trx_id": 83,
       "path": "github.com/cespare/vim-toml",
       "version": "b531aac0d45aaa373070c4cc30d7ead91960f5a7"
     },
     {
       "type": "git",
-      "trx_id": 5,
+      "trx_id": 83,
       "path": "github.com/cocopon/iceberg.vim",
       "version": "b9f1cb8cc6953706a4e2482502afa992415e0488"
     },
     {
       "type": "git",
-      "trx_id": 6,
+      "trx_id": 83,
       "path": "github.com/cohama/agit.vim",
       "version": "e1c648198e08167f9d4099700eae8362bee003ca"
     },
     {
       "type": "git",
-      "trx_id": 7,
+      "trx_id": 83,
       "path": "github.com/cohama/lexima.vim",
       "version": "85cfff9f7d16bd1ad76fcfedca6ab4982af6ba9d"
     },
     {
       "type": "git",
-      "trx_id": 8,
+      "trx_id": 83,
       "path": "github.com/godlygeek/tabular",
       "version": "00e1e7fcdbc6d753e0bc8043e0d2546fa81bf367"
     },
     {
       "type": "git",
-      "trx_id": 9,
+      "trx_id": 83,
       "path": "github.com/dag/vim-fish",
       "version": "50b95cbbcd09c046121367d49039710e9dc9c15f"
     },
     {
       "type": "git",
-      "trx_id": 10,
+      "trx_id": 83,
       "path": "github.com/fatih/vim-go",
       "version": "e880203909ee94068a0cab9c4b34eceb23f72637"
     },
     {
       "type": "git",
-      "trx_id": 11,
+      "trx_id": 83,
       "path": "github.com/itchyny/lightline.vim",
       "version": "6f84195f109d3e7f7ecb5e4a9ae8c5d3009259ac"
     },
     {
       "type": "git",
-      "trx_id": 12,
+      "trx_id": 83,
       "path": "github.com/itchyny/thumbnail.vim",
       "version": "71cb5d48e59fc77149c1d1036ecd9e39f0b46a00"
     },
     {
       "type": "git",
-      "trx_id": 13,
+      "trx_id": 83,
       "path": "github.com/joonty/vdebug",
       "version": "4c6a7caa10e32841dba86ba16acee30781388fdd"
     },
     {
       "type": "git",
-      "trx_id": 14,
+      "trx_id": 83,
       "path": "github.com/jpalardy/vim-slime",
       "version": "e58486b791e6e1126ffd46d4ef634b8fef104f7f"
     },
     {
       "type": "git",
-      "trx_id": 15,
+      "trx_id": 83,
       "path": "github.com/junegunn/seoul256.vim",
       "version": "1475b7610663c68aa90b6e565997c8792ce0d222"
     },
     {
       "type": "git",
-      "trx_id": 16,
+      "trx_id": 83,
       "path": "github.com/justinmk/vim-dirvish",
       "version": "e4b3c4b62d0ddb2d24aa8f9fcf3820f6d6de4ebf"
     },
     {
       "type": "git",
-      "trx_id": 17,
+      "trx_id": 83,
       "path": "github.com/kamwitsta/flatwhite-vim",
       "version": "534c6f2f524c8444fd9d712ff995365e6d3f2f32"
     },
     {
       "type": "git",
-      "trx_id": 18,
+      "trx_id": 83,
       "path": "github.com/kana/vim-altr",
       "version": "05d4150d8867f4dfb22bc38f832317ae24b8c2d2"
     },
     {
       "type": "git",
-      "trx_id": 19,
+      "trx_id": 83,
       "path": "github.com/kana/vim-gf-user",
       "version": "f9a939a53df7876b9205a087fe903d15e4b26dcd"
     },
     {
       "type": "git",
-      "trx_id": 20,
+      "trx_id": 83,
       "path": "github.com/kana/vim-metarw",
       "version": "3082902c82c3fd0a8aa26df6a5855d70e66022c5"
     },
     {
       "type": "git",
-      "trx_id": 21,
+      "trx_id": 83,
       "path": "github.com/kana/vim-metarw-git",
       "version": "491df5e58d20614344ccf86347687152d8ea938f"
     },
     {
       "type": "git",
-      "trx_id": 22,
+      "trx_id": 83,
       "path": "github.com/kana/vim-operator-user",
       "version": "c3dfd41c1ed516b4b901c97562e644de62c367aa"
     },
     {
       "type": "git",
-      "trx_id": 23,
+      "trx_id": 83,
       "path": "github.com/kana/vim-smartchr",
       "version": "f689b54cf488d5f1fc819553f6d986c567be5dfb"
     },
     {
       "type": "git",
-      "trx_id": 24,
+      "trx_id": 83,
       "path": "github.com/kana/vim-submode",
       "version": "d29de4f55c40a7a03af1d8134453a703d6affbd2"
     },
     {
       "type": "git",
-      "trx_id": 25,
+      "trx_id": 83,
       "path": "github.com/kana/vim-tabpagecd",
       "version": "8b71a03a037608fa5918f5096812577cec6355e4"
     },
     {
       "type": "git",
-      "trx_id": 26,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-fold",
       "version": "947d768785e2d1e7484c5d729cd0e5a8e53e9584"
     },
     {
       "type": "git",
-      "trx_id": 27,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-indent",
       "version": "deb76867c302f933c8f21753806cbf2d8461b548"
     },
     {
       "type": "git",
-      "trx_id": 28,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-lastpat",
       "version": "686aa837e3aa649b16572d5d55eb2d8c7fc6c78a"
     },
     {
       "type": "git",
-      "trx_id": 29,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-line",
       "version": "0a78169a33c7ea7718b9fa0fad63c11c04727291"
     },
     {
       "type": "git",
-      "trx_id": 30,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-syntax",
       "version": "a0167c2680f8a35d9ca1f47ddf31070492893175"
     },
     {
       "type": "git",
-      "trx_id": 31,
+      "trx_id": 83,
       "path": "github.com/kana/vim-textobj-user",
       "version": "e231b65797b5765b3ee862d71077e9bd56f3ca3e"
     },
     {
       "type": "git",
-      "trx_id": 32,
+      "trx_id": 83,
       "path": "github.com/kannokanno/previm",
       "version": "12226fa0e3e807a6498cd6bd6de8af70278203fe"
     },
     {
       "type": "git",
-      "trx_id": 33,
+      "trx_id": 83,
       "path": "github.com/kchmck/vim-coffee-script",
       "version": "de6b6327b4e738ea5dbf0ef97d06d39217e4e6fc"
     },
     {
       "type": "git",
-      "trx_id": 34,
+      "trx_id": 83,
       "path": "github.com/lambdalisue/vim-gita",
       "version": "3bd6ff239d52134fc38cd6c35b63ad9aea0f6d4e"
     },
     {
       "type": "git",
-      "trx_id": 35,
+      "trx_id": 83,
       "path": "github.com/majutsushi/tagbar",
       "version": "387bbadda98e1376ff3871aa461b1f0abd4ece70"
     },
     {
       "type": "git",
-      "trx_id": 36,
+      "trx_id": 83,
       "path": "github.com/mattn/calendar-vim",
       "version": "c3059b1f66cfc2e52c2de8a6146ae65256802f9c"
     },
     {
       "type": "git",
-      "trx_id": 37,
+      "trx_id": 83,
       "path": "github.com/mattn/webapi-vim",
       "version": "e76f2da9a8f292a999a95ae688534f76c2dca9bd"
     },
     {
       "type": "git",
-      "trx_id": 38,
+      "trx_id": 83,
       "path": "github.com/maximbaz/lightline-ale",
       "version": "d32c541a96948f356a2cc59aa2c5dea279bbedfa"
     },
     {
       "type": "git",
-      "trx_id": 39,
+      "trx_id": 83,
       "path": "github.com/nathanaelkane/vim-indent-guides",
       "version": "b40687195c01caf40f62d20093296590b48e3a75"
     },
     {
       "type": "git",
-      "trx_id": 40,
+      "trx_id": 83,
       "path": "github.com/NLKNguyen/papercolor-theme",
       "version": "52418a28780e1fa7a5a6bf791e59ea873930b263"
     },
     {
       "type": "git",
-      "trx_id": 41,
+      "trx_id": 83,
       "path": "github.com/OmniSharp/omnisharp-vim",
       "version": "5a68fdd87755d70343a756cd23de9dde84313808"
     },
     {
       "type": "git",
-      "trx_id": 42,
+      "trx_id": 83,
       "path": "github.com/osyo-manga/vim-textobj-multiblock",
       "version": "670a5ba57d73fcd793f480e262617c6eb0103355"
     },
     {
       "type": "git",
-      "trx_id": 43,
+      "trx_id": 83,
       "path": "github.com/othree/html5.vim",
       "version": "c00d81090992d0531c840663da2227499b5c825d"
     },
     {
       "type": "git",
-      "trx_id": 44,
+      "trx_id": 83,
       "path": "github.com/pangloss/vim-javascript",
       "version": "7c73d8e1f9ce020ee8ea2ab0af60e9f8fef6c90d"
     },
     {
       "type": "git",
-      "trx_id": 45,
+      "trx_id": 83,
       "path": "github.com/plasticboy/vim-markdown",
       "version": "f416b35dba4505f85dca9cafb984ab7d89e57f96"
     },
     {
       "type": "git",
-      "trx_id": 46,
+      "trx_id": 83,
       "path": "github.com/rhysd/vim-clang-format",
       "version": "894814b98ee6f6c59bf18676da5285f63e0d4234"
     },
     {
       "type": "git",
-      "trx_id": 47,
+      "trx_id": 83,
       "path": "github.com/Shougo/junkfile.vim",
       "version": "652a81f5d61f83b078cd3eb1373e651d2f0d3da1"
     },
     {
       "type": "git",
-      "trx_id": 48,
+      "trx_id": 83,
       "path": "github.com/Shougo/neocomplete",
       "version": "46791e7692e07384a089d125c5c536246698d04c"
     },
     {
       "type": "git",
-      "trx_id": 49,
+      "trx_id": 83,
       "path": "github.com/Shougo/neomru.vim",
       "version": "97540f54fa20b94daf306f0c1f3cce983bbf7a1d"
     },
     {
       "type": "git",
-      "trx_id": 50,
+      "trx_id": 83,
       "path": "github.com/Shougo/neosnippet",
       "version": "b674417b429e57eccf5a64d8ec4d2fdf1f1ec5cc"
     },
     {
       "type": "git",
-      "trx_id": 51,
+      "trx_id": 83,
       "path": "github.com/Shougo/neosnippet-snippets",
       "version": "8dbb78599984140c50418d3dd23d0de4c8f13e74"
     },
     {
       "type": "git",
-      "trx_id": 52,
+      "trx_id": 83,
       "path": "github.com/Shougo/tabpagebuffer.vim",
       "version": "4d95c3e6fa5ad887498f4cbe486c11e39d4a1fbc"
     },
     {
       "type": "git",
-      "trx_id": 53,
+      "trx_id": 83,
       "path": "github.com/Shougo/unite-outline",
       "version": "35af4ec1e3938a3f017a5b89bf82f7eef7222bfa"
     },
     {
       "type": "git",
-      "trx_id": 54,
+      "trx_id": 83,
       "path": "github.com/Shougo/unite.vim",
       "version": "84624872acbd3158621858b00ce79dd9e08e88d1"
     },
     {
       "type": "git",
-      "trx_id": 55,
+      "trx_id": 83,
       "path": "github.com/Shougo/vimfiler",
       "version": "9deb9b4fbae6b17feb8b5da5ca1fe37391d760f3"
     },
     {
       "type": "git",
-      "trx_id": 56,
+      "trx_id": 83,
       "path": "github.com/Shougo/vimproc.vim",
       "version": "81f4fa5239705724a49fbecd3299ced843f4972f"
     },
     {
       "type": "git",
-      "trx_id": 57,
+      "trx_id": 83,
       "path": "github.com/Shougo/vinarise",
       "version": "1350c9335d96568f26accd98ca5fe433f79a1131"
     },
     {
       "type": "git",
-      "trx_id": 58,
+      "trx_id": 83,
       "path": "github.com/slim-template/vim-slim",
       "version": "b19d372ddc4b00048953dc0f5315490ede343b60"
     },
     {
       "type": "git",
-      "trx_id": 59,
+      "trx_id": 83,
       "path": "github.com/t9md/vim-quickhl",
       "version": "f843c93a02f86af1568daf44c3acb1a59fc8c76d"
     },
     {
       "type": "git",
-      "trx_id": 60,
+      "trx_id": 83,
       "path": "github.com/tacroe/unite-mark",
       "version": "c6353b0b0a3ecb2dd316b57a351cd71eb580bf57"
     },
     {
       "type": "git",
-      "trx_id": 61,
+      "trx_id": 83,
       "path": "github.com/taku-o/vim-toggle",
       "version": "e5ff5158fbc3c176ddc432df10e3332c96fe2c7a"
     },
     {
       "type": "git",
-      "trx_id": 62,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-editvar",
       "version": "be70c7a2a5cba0503055987c3046c5854fdd603a"
     },
     {
       "type": "git",
-      "trx_id": 63,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-prettyprint",
       "version": "d6060d2b1ff1cff71714e126addd3b10883ade12"
     },
     {
       "type": "git",
-      "trx_id": 64,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-quickrun",
       "version": "e0922c4d2702bd14a7bba652b2ff38118c10c725"
     },
     {
       "type": "git",
-      "trx_id": 65,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-ref",
       "version": "b45d10f6d0c82e3afd17774626e952fde03274a1"
     },
     {
       "type": "git",
-      "trx_id": 66,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-visualstar",
       "version": "a18cd0e7a03311ac709595c1d261ed44b45c9098"
     },
     {
       "type": "git",
-      "trx_id": 67,
+      "trx_id": 83,
       "path": "github.com/thinca/vim-zenspace",
       "version": "1f620052a7c85752fd06110098383b1f0c564f1c"
     },
     {
       "type": "git",
-      "trx_id": 68,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-dispatch",
       "version": "c5b1bbe1662d76c0aa9f6d325c3fb1b8db62ba02"
     },
     {
       "type": "git",
-      "trx_id": 69,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-endwise",
       "version": "d5655263af8b3611a2bcb907a9963831a88d154b"
     },
     {
       "type": "git",
-      "trx_id": 70,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-haml",
       "version": "d580aa3a3f8b576425188be64381047c7b993112"
     },
     {
       "type": "git",
-      "trx_id": 71,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-rails",
       "version": "d8d8151a4f85686196524bed4950c59e37d2e8e9"
     },
     {
       "type": "git",
-      "trx_id": 72,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-repeat",
       "version": "070ee903245999b2b79f7386631ffd29ce9b8e9f"
     },
     {
       "type": "git",
-      "trx_id": 73,
+      "trx_id": 83,
       "path": "github.com/tpope/vim-surround",
       "version": "e49d6c2459e0f5569ff2d533b4df995dd7f98313"
     },
     {
       "type": "git",
-      "trx_id": 74,
+      "trx_id": 83,
       "path": "github.com/tyru/caw.vim",
       "version": "50efcd94e00dc3e814bcc0d3d8ccfa3ff324ea42"
     },
     {
       "type": "git",
-      "trx_id": 75,
+      "trx_id": 83,
       "path": "github.com/tyru/open-browser.vim",
       "version": "ee8decb2b26020320128eecd7a96383d995c8804"
     },
     {
       "type": "git",
-      "trx_id": 76,
+      "trx_id": 83,
       "path": "github.com/ujihisa/unite-colorscheme",
       "version": "505157450fe1a967c6c044d3bfe18d896e3d5d08"
     },
     {
       "type": "git",
-      "trx_id": 77,
+      "trx_id": 83,
       "path": "github.com/ujihisa/unite-font",
       "version": "499603ca6c806d52634e6fec2e9f941135f4ce8d"
     },
     {
       "type": "git",
-      "trx_id": 78,
+      "trx_id": 83,
       "path": "github.com/ujihisa/unite-locate",
       "version": "a748cdefe89748be3754aaa8c7643d05c30534e0"
     },
     {
       "type": "git",
-      "trx_id": 79,
+      "trx_id": 83,
       "path": "github.com/vim-jp/vimdoc-ja",
       "version": "ee34be819f8b9d574e9c7549cddd99bbbf2b6ed2"
     },
     {
       "type": "git",
-      "trx_id": 80,
+      "trx_id": 83,
       "path": "github.com/vim-ruby/vim-ruby",
       "version": "074200ffa39b19baf9d9750d399d53d97f21ee07"
     },
     {
       "type": "git",
-      "trx_id": 81,
+      "trx_id": 83,
       "path": "github.com/w0rp/ale",
       "version": "5285b0b332f067f56a6ac13a316db64acbac0c6b"
     }
