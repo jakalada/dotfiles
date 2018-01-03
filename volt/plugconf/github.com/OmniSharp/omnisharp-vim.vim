@@ -1,5 +1,7 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:OmniSharp_server_type='v1'
+  let g:omnicomplete_fetch_documentation=1
+  let g:OmniSharp_selector_ui='unite'
 endfunction
 
 function! s:loaded_on()

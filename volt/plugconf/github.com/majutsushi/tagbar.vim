@@ -1,5 +1,6 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:tagbar_sort = 0
+  nnoremap <silent> <Leader>t :<C-U>TagbarToggle<CR>
 endfunction
 
 function! s:loaded_on()

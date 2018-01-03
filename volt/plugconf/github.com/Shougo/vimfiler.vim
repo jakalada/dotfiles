@@ -1,5 +1,15 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:vimfiler_ignore_pattern = '\(^\.\|\~$\|\.pyc$\|\.[oad]$\|^__pycache__$\|\.meta$\)'
+  let g:vimfiler_time_format        = '%Y/%m/%d %H:%M'  " 例: 2013/01/01 00:00
+  let g:vimfiler_force_overwrite_statusline = 0
+
+  nnoremap <silent> <Leader>e :<C-U>VimFilerExplorer -toggle<CR>
+  nnoremap <silent> <Leader>E :<C-U>VimFilerCurrentDir -toggle<CR>
+
+  MyAutocmd Filetype vimfiler call s:init_vimfiler()
+  function! s:init_vimfiler() " {{{
+    setlocal nonumber
+  endfunction " }}}
 endfunction
 
 function! s:loaded_on()
@@ -13,6 +23,19 @@ function! s:loaded_on()
   "
   " This function must contain 'return "<str>"' code.
   " (the argument of :return must be string literal)
+
+  " 削除時にゴミ箱に移動したい場合
+  " windows: vimprocプラグインをインストール
+  "   linux: trash-cliをインストール
+  "     osx: rmtrashをインストール
+  "     etc: オプションで直接コマンドを指定する
+  call vimfiler#custom#profile('default', 'context', {
+        \   'explorer' : 0,
+        \   'safe' : 0,
+        \   'split' : 'split',
+        \   'auto_cd' : 0
+        \ })
+
 
   return 'start'
 endfunction

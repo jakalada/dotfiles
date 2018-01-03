@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nmap - <Plug>ToggleN
 endfunction
 
 function! s:loaded_on()

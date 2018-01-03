@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nnoremap <silent> <SID>[unite]j :<C-u>Unite -start-insert junkfile/new junkfile<CR>
 endfunction
 
 function! s:loaded_on()

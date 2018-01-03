@@ -1,5 +1,21 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  if has('win32') || has('win64')
+    let g:ref_pydoc_cmd = 'pydoc.bat'
+    let g:ref_refe_encoding = 'cp932'
+  else
+    let g:ref_pydoc_cmd = 'python3 -m pydoc'
+  endif
+
+  let g:ref_detect_filetype = {
+        \ 'c': 'man', 'clojure': 'clojure', 'perl': 'perldoc', 'php': 'phpmanual', 'ruby': 'refe', 'erlang': 'erlang', 'python': 'pydoc'
+        \}
+
+  MyAutocmd FileType ref call s:initialize_ref_viewer()
+  function! s:initialize_ref_viewer()
+    nmap <buffer> <Backspace> <Plug>(ref-back)
+    nmap <buffer> <S-Backspace> <Plug>(ref-forward)
+    setlocal nonumber
+  endfunction
 endfunction
 
 function! s:loaded_on()

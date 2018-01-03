@@ -1,5 +1,6 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:gitgutter_enabled = 1
+  nnoremap <Leader>gg  :<C-u>GitGutterToggle<CR>
 endfunction
 
 function! s:loaded_on()

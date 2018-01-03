@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:vim_markdown_folding_level = 2
 endfunction
 
 function! s:loaded_on()

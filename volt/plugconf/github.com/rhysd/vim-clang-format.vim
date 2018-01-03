@@ -1,5 +1,6 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:clang_format#auto_format = 0
+  let g:clang_format#code_style = 'google'
 endfunction
 
 function! s:loaded_on()

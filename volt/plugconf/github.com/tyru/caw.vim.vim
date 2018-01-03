@@ -1,5 +1,7 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:caw_no_default_keymappings = 1
+  nmap <C-P> <Plug>(caw:hatpos:toggle)
+  vmap <C-P> <Plug>(caw:hatpos:toggle)
 endfunction
 
 function! s:loaded_on()

@@ -1,5 +1,24 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  if has('gui_running')
+    let g:lightline = {
+          \ 'colorscheme': 'PaperColor',
+          \ }
+  else
+    let g:lightline = {
+          \ 'colorscheme': 'PaperColor',
+          \ }
+  endif
+
+  let g:lightline.component_expand = {
+        \  'linter_warnings': 'lightline#ale#warnings',
+        \  'linter_errors': 'lightline#ale#errors',
+        \  'linter_ok': 'lightline#ale#ok',
+        \ }
+  let g:lightline.component_type = {
+        \     'linter_warnings': 'warning',
+        \     'linter_errors': 'error',
+        \ }
+  let g:lightline.active = { 'right': [[ 'lineinfo' ], [ 'percent' ], [ 'fileformat', 'fileencoding', 'filetype' ],  ['linter_errors', 'linter_warnings', 'linter_ok' ] ] }
 endfunction
 
 function! s:loaded_on()

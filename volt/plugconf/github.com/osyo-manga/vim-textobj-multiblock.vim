@@ -1,5 +1,19 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  omap a; <Plug>(textobj-multiblock-a)
+  omap i; <Plug>(textobj-multiblock-i)
+  vmap a; <Plug>(textobj-multiblock-a)
+  vmap i; <Plug>(textobj-multiblock-i)
+
+  let g:textobj_multiblock_blocks = [
+        \[ '(', ')' ],
+        \[ '[', ']' ],
+        \[ '{', '}' ],
+        \[ '<', '>' ],
+        \[ '"', '"' ],
+        \[ "'", "'" ],
+        \[ '`', '`' ],
+        \[ '<', '>' ]
+        \]
 endfunction
 
 function! s:loaded_on()

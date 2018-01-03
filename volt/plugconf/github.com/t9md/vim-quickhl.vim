@@ -1,5 +1,11 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nmap <Leader>m <Plug>(quickhl-manual-this)
+  xmap <Leader>m <Plug>(quickhl-manual-this)
+  nmap <Leader>M <Plug>(quickhl-manual-reset)
+  xmap <Leader>M <Plug>(quickhl-manual-reset)
+
+  nmap <Leader>j <Plug>(quickhl-cword-toggle)
+  nmap <Leader>] <Plug>(quickhl-tag-toggle)
 endfunction
 
 function! s:loaded_on()

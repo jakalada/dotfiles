@@ -1,5 +1,22 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  " neocomplete.vim {{{2
+  let g:neocomplete#enable_at_startup = 1
+  let g:neocomplete#enable_smart_case = 1
+  let g:neocomplete#min_keyword_length = 3
+
+  MyAutocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  MyAutocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  MyAutocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  MyAutocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  MyAutocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+
+  if !exists('g:neocomplete#keyword_patterns')
+      let g:neocomplete#keyword_patterns = {}
+  endif
+  let g:neocomplete#keyword_patterns._ = '\h\w*'
+
+  inoremap <C-O> <C-X><C-O>
+  inoremap <expr><CR> pumvisible() ? '<C-Y><CR>' : '<CR>'
 endfunction
 
 function! s:loaded_on()

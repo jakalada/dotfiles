@@ -1,5 +1,6 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nmap <C-O> <Plug>(openbrowser-smart-search)
+  vmap <C-O> <Plug>(openbrowser-smart-search)
 endfunction
 
 function! s:loaded_on()

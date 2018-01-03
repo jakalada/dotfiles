@@ -1,5 +1,6 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nmap <Leader>n  <Plug>(altr-forward)
+  nmap <Leader>p  <Plug>(altr-back)
 endfunction
 
 function! s:loaded_on()
@@ -13,6 +14,10 @@ function! s:loaded_on()
   "
   " This function must contain 'return "<str>"' code.
   " (the argument of :return must be string literal)
+  call altr#define('spec/%_spec.rb', 'lib/%.rb')
+  call altr#define('src/lib/*/%.coffee', 'spec/*/%_spec.coffee')
+  call altr#define('src/lib/%.coffee', 'spec/%_spec.coffee')
+  call altr#define('src/%.c', 'include/%.h')
 
   return 'start'
 endfunction

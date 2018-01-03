@@ -1,5 +1,8 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:indent_guides_enable_on_vim_startup = 1
+  let g:indent_guides_auto_colors = 1
+  let g:indent_guides_color_change_percent = 4
+  let g:indent_guides_default_mapping = 0
 endfunction
 
 function! s:loaded_on()

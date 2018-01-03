@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:go_fmt_command = "goimports"
 endfunction
 
 function! s:loaded_on()

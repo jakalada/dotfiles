@@ -1,5 +1,11 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:neosnippet#snippets_directory = $DOTVIMDIR . '/snippets'
+
+  nnoremap <silent> <Leader>.s :<C-U>NeoSnippetEdit<CR>
+  imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+        \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+  smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+        \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 endfunction
 
 function! s:loaded_on()

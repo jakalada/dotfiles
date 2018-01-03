@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  nnoremap <silent> <SID>[unite-no-quit]o :<C-U>Unite -no-quit -keep-focus -buffer-name=outline outline<CR>
 endfunction
 
 function! s:loaded_on()

@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:slime_target = "tmux"
 endfunction
 
 function! s:loaded_on()

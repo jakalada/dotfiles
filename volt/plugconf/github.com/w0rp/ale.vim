@@ -1,5 +1,5 @@
 function! s:config()
-  " Plugin configuration like the code written in vimrc.
+  let g:ale_fix_on_save = 1
 endfunction
 
 function! s:loaded_on()
