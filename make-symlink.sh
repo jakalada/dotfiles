@@ -9,10 +9,17 @@ relative_file_path_list=(
 ".tern-project"
 ".vim"
 ".zshrc"
+"volt/lock.json"
+"volt/plugconf"
+"volt/rc"
 )
 
 cd `dirname $0`
 
 for name in "${relative_file_path_list[@]}"; do
-	ln -s "`pwd`/dotfiles/$name" "$HOME/$name" && echo "created: $HOME/$name"
+  if [ ! -e "$HOME/$name" ]; then
+    ln -s "`pwd`/dotfiles/$name" "$HOME/$name" && echo "created: $HOME/$name"
+  else
+    echo "skip: $HOME/$name"
+  fi
 done
