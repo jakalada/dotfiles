@@ -6,10 +6,10 @@ function! s:config()
   nnoremap <silent> <Leader>e :<C-U>VimFilerExplorer -toggle<CR>
   nnoremap <silent> <Leader>E :<C-U>VimFilerCurrentDir -toggle<CR>
 
-  MyAutocmd Filetype vimfiler call s:init_vimfiler()
-  function! s:init_vimfiler() " {{{
+  function! s:init_vimfiler()
     setlocal nonumber
-  endfunction " }}}
+  endfunction
+  autocmd Filetype vimfiler call s:init_vimfiler()
 endfunction
 
 function! s:loaded_on()
