@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "trx_id": 83,
+  "trx_id": 84,
   "current_profile_name": "default",
   "repos": [
     {
@@ -408,12 +408,6 @@
     {
       "type": "git",
       "trx_id": 83,
-      "path": "github.com/tpope/vim-endwise",
-      "version": "d5655263af8b3611a2bcb907a9963831a88d154b"
-    },
-    {
-      "type": "git",
-      "trx_id": 83,
       "path": "github.com/tpope/vim-haml",
       "version": "d580aa3a3f8b576425188be64381047c7b993112"
     },
@@ -555,7 +549,6 @@
         "github.com/thinca/vim-visualstar",
         "github.com/thinca/vim-zenspace",
         "github.com/tpope/vim-dispatch",
-        "github.com/tpope/vim-endwise",
         "github.com/tpope/vim-haml",
         "github.com/tpope/vim-rails",
         "github.com/tpope/vim-repeat",
