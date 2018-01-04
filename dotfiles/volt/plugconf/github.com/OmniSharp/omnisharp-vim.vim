@@ -1,6 +1,6 @@
 function! s:config()
   let g:OmniSharp_server_type='v1'
-  let g:omnicomplete_fetch_documentation=1
+  let g:omnicomplete_fetch_full_documentation=1
   let g:OmniSharp_selector_ui='unite'
 endfunction
 

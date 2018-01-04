@@ -1,6 +1,21 @@
+function! s:init()
+  call altr#define('spec/%_spec.rb', 'lib/%.rb')
+  call altr#define('test/%_test.rb', 'lib/%.rb')
+  call altr#define('src/lib/*/%.coffee', 'spec/*/%_spec.coffee')
+  call altr#define('src/lib/%.coffee', 'spec/%_spec.coffee')
+  call altr#define('src/%.c', 'include/%.h')
+endfunction
+
 function! s:config()
   nmap <Leader>n  <Plug>(altr-forward)
   nmap <Leader>p  <Plug>(altr-back)
+
+  " s:loaded_on関数への記述では動作しない処理への対応
+  if v:vim_did_enter
+    call s:init()
+  else
+    autocmd VimEnter * call s:init()
+  endif
 endfunction
 
 function! s:loaded_on()
@@ -14,10 +29,6 @@ function! s:loaded_on()
   "
   " This function must contain 'return "<str>"' code.
   " (the argument of :return must be string literal)
-  call altr#define('spec/%_spec.rb', 'lib/%.rb')
-  call altr#define('src/lib/*/%.coffee', 'spec/*/%_spec.coffee')
-  call altr#define('src/lib/%.coffee', 'spec/%_spec.coffee')
-  call altr#define('src/%.c', 'include/%.h')
 
   return 'start'
 endfunction
