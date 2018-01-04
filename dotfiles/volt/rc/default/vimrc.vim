@@ -669,6 +669,35 @@ function! s:format_file()
 endfunction
 nnoremap <C-F> :call <SID>format_file()<CR>
 
+" {{{1 Volt other plugconf
+function! s:init_volt_other_plugconf()
+  " vim-altr
+  call altr#define('spec/%_spec.rb', 'lib/%.rb')
+  call altr#define('test/%_test.rb', 'lib/%.rb')
+  call altr#define('src/lib/*/%.coffee', 'spec/*/%_spec.coffee')
+  call altr#define('src/lib/%.coffee', 'spec/%_spec.coffee')
+  call altr#define('src/%.c', 'include/%.h')
+
+  " vimfiler.vim
+  " 削除時にゴミ箱に移動したい場合
+  " windows: vimprocプラグインをインストール
+  "   linux: trash-cliをインストール
+  "     osx: rmtrashをインストール
+  "     etc: オプションで直接コマンドを指定する
+  call vimfiler#custom#profile('default', 'context', {
+        \   'explorer' : 0,
+        \   'safe' : 0,
+        \   'split' : 'split',
+        \   'auto_cd' : 0
+        \ })
+endfunction
+if v:vim_did_enter
+  call s:init_volt_other_plugconf()
+else
+  autocmd VimEnter * call s:init_volt_other_plugconf()
+endif
+
+
 " }}}1
 
 set secure  " must be written at the last.  see :help 'secure'.
