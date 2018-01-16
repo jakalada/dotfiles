@@ -2,7 +2,10 @@
 set -e
 
 relative_file_path_list=(
-".config/fish"
+".config/fish/completions"
+".config/fish/config.fish"
+".config/fish/fishfile"
+".config/fish/functions"
 ".gitconfig"
 ".gitignore.base"
 ".jshintrc"
