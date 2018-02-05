@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "trx_id": 95,
+  "trx_id": 96,
   "current_profile_name": "default",
   "repos": [
     {
@@ -476,6 +476,12 @@
       "trx_id": 95,
       "path": "github.com/kana/vim-metarw-git",
       "version": "491df5e58d20614344ccf86347687152d8ea938f"
+    },
+    {
+      "type": "git",
+      "trx_id": 96,
+      "path": "github.com/sophacles/vim-processing",
+      "version": "ccba46b540919b6cb774368837f4f80aa49fb8a3"
     }
   ],
   "profiles": [
@@ -560,7 +566,8 @@
         "github.com/w0rp/ale",
         "github.com/kana/vim-gf-user",
         "github.com/kana/vim-metarw",
-        "github.com/kana/vim-metarw-git"
+        "github.com/kana/vim-metarw-git",
+        "github.com/sophacles/vim-processing"
       ]
     }
   ]
