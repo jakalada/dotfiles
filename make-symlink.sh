@@ -8,6 +8,7 @@ relative_file_path_list=(
 ".config/fish/functions"
 ".gitconfig"
 ".gitignore.base"
+".ideavimrc"
 ".jshintrc"
 ".tern-project"
 ".vim"

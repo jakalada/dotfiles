@@ -1,0 +1,43 @@
+set nojoinspaces
+
+set incsearch
+set ignorecase
+set smartcase
+set wrapscan
+set hlsearch
+
+vnoremap <C-J> <Esc>
+onoremap <C-J> <Esc>
+inoremap <C-J> <Esc>
+cnoremap <C-J> <C-C>
+xnoremap <C-J> <Esc>
+snoremap <C-J> <Esc>
+lnoremap <C-J> <Esc>
+
+noremap j gj
+noremap k gk
+
+noremap L g_
+noremap H ^
+
+noremap <C-H> <C-U>
+noremap <C-L> <C-D>
+
+nnoremap <C-Up> <C-A>
+nnoremap <C-Down> <C-X>
+
+nnoremap n nzz
+nnoremap N Nzz
+
+vnoremap > >gv
+vnoremap < <gv
+
+vnoremap ) t)
+vnoremap ( t(
+
+inoremap <silent> <C-L> <Right>
+inoremap <silent> <C-H> <Left>
+
+inoremap <C-CR> <Esc>o
+
+nnoremap <silent> <Space><Space> :<C-U>write<CR>
