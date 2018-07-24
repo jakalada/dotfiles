@@ -2,8 +2,7 @@
 set -x PATH $PATH /usr/local/bin
 
 # For go-lang
-set -x GOPATH ~/go
-set -x PATH $PATH $GOPATH/bin
+set -x PATH $PATH ~/go/bin
 
 # For Android SDK
 set -x ANDROID_HOME /usr/local/share/android-sdk
