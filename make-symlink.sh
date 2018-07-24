@@ -12,9 +12,6 @@ relative_file_path_list=(
 ".tern-project"
 ".vim"
 ".zshrc"
-"volt/lock.json"
-"volt/plugconf"
-"volt/rc"
 )
 
 cd `dirname $0`
