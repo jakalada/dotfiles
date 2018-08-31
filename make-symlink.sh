@@ -11,8 +11,6 @@ relative_file_path_list=(
 ".ideavimrc"
 ".jshintrc"
 ".tern-project"
-".vim"
-".zshrc"
 )
 
 cd `dirname $0`
