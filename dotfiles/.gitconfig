@@ -1,9 +1,12 @@
 [user]
-  name = Hideki Hamada (jakalada)
-  email = jakalada.net@gmail.com
+	name = Hideki Hamada (jakalada)
+	email = jakalada.net@gmail.com
 
 [github]
   user = jakalada
+
+[ghq]
+  root = ~/ghq
 
 [core]
   editor = vim
@@ -58,3 +61,8 @@
              git add .gitmodules\n\
           ' -"
 
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

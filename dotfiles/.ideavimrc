@@ -6,6 +6,7 @@ set smartcase
 set wrapscan
 set hlsearch
 
+" <C-J>を各モードでエスケープにマッピング
 vnoremap <C-J> <Esc>
 onoremap <C-J> <Esc>
 inoremap <C-J> <Esc>
@@ -14,30 +15,46 @@ xnoremap <C-J> <Esc>
 snoremap <C-J> <Esc>
 lnoremap <C-J> <Esc>
 
+" mapmode-nvo
 noremap j gj
 noremap k gk
 
 noremap L g_
 noremap H ^
 
-noremap <C-H> <C-U>
-noremap <C-L> <C-D>
+" mapmode-n
+nnoremap <Backspace> <C-O>
+nnoremap <S-Backspace> <C-I>
+
+nnoremap <silent> <Space><Space> :<C-U>write<CR>
 
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
 
+nnoremap <C-H> <C-O>
+nnoremap <C-L> <C-I>
+
+nnoremap Q q
+nnoremap <silent> q :<C-U>close<CR>
+
 nnoremap n nzz
 nnoremap N Nzz
 
+" mapmode-v
 vnoremap > >gv
 vnoremap < <gv
 
 vnoremap ) t)
 vnoremap ( t(
 
+vnoremap q <Nop>
+vnoremap qq <Nop>
+
+" mapmode-i
 inoremap <silent> <C-L> <Right>
 inoremap <silent> <C-H> <Left>
 
 inoremap <C-CR> <Esc>o
 
 nnoremap <silent> <Space><Space> :<C-U>write<CR>
+
