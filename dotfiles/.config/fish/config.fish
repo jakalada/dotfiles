@@ -1,16 +1,3 @@
-# Add /user/local/bin
-set -x PATH $PATH /usr/local/bin
-
-# For go-lang
-set -x PATH $PATH ~/go/bin
-
-# For Android SDK
-set -x ANDROID_HOME /usr/local/share/android-sdk
-
-# For esp-idf
-set -x PATH $PATH ~/esp/xtensa-esp32-elf/bin
-set -x IDF_PATH ~/esp/esp-idf
-
 # abbr
 alias g='git'
 alias r='rails'

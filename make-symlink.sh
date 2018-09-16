@@ -11,6 +11,7 @@ relative_file_path_list=(
 ".ideavimrc"
 ".jshintrc"
 ".tern-project"
+".bash_profile"
 )
 
 cd `dirname $0`
