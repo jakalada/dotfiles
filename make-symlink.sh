@@ -12,6 +12,7 @@ relative_file_path_list=(
 ".jshintrc"
 ".tern-project"
 ".bash_profile"
+".bashrc"
 )
 
 cd `dirname $0`

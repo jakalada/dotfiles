@@ -1,3 +1,18 @@
+# Homebrew
+set PATH /usr/local/bin $PATH
+
+# Go
+set GOPATH ~/go
+set PATH $GOPATH/bin $PATH
+
+# Android
+set ANDROID_HOME /usr/local/share/android-sdk
+
+# esp-idf
+# (not set when using FreeRTOS)
+#export IDF_PATH=~/esp/esp-idf
+#export PATH=~/esp/xtensa-esp32-elf/bin:$PATH
+
 # abbr
 alias g='git'
 alias r='rails'
