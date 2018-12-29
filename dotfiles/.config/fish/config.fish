@@ -5,6 +5,9 @@ set PATH /usr/local/bin $PATH
 set GOPATH ~/go
 set PATH $GOPATH/bin $PATH
 
+# Ruby on HomeBrew
+set PATH  /usr/local/opt/ruby/bin $PATH
+
 # Android
 set ANDROID_HOME /usr/local/share/android-sdk
 

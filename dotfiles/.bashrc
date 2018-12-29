@@ -5,6 +5,9 @@ export PATH=/usr/local/bin:$PATH
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 
+# Ruby on HomeBrew
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
 # Android
 #export ANDROID_HOME=/usr/local/share/android-sdk
 
