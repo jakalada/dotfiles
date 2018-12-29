@@ -7,6 +7,7 @@ set PATH $GOPATH/bin $PATH
 
 # Ruby on HomeBrew
 set PATH  /usr/local/opt/ruby/bin $PATH
+set PATH /usr/local/lib/ruby/gems/2.6.0/bin $PATH
 
 # Android
 set ANDROID_HOME /usr/local/share/android-sdk
