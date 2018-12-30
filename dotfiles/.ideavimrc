@@ -1,13 +1,36 @@
-" tpope/vim-surround と同じ機能とキーバインドを実現。
+" IdeaVIMがエミュレーション可能なプラグイン
+" REF: https://github.com/JetBrains/ideavim#emulated-vim-plugins
 set surround
+" set multiple-cursors
 
-set nojoinspaces
-
-set incsearch
-set ignorecase
-set smartcase
-set wrapscan
+" IdeaVIMがサポートしているオプション
+" REF: https://github.com/JetBrains/ideavim/blob/master/doc/set-commands.md
+set clipboard=unnamed
+" set digraph
+" set gdefault
+" set history
 set hlsearch
+set ignorecase
+set iskeyword+=-_
+set incsearch
+set matchpairs+=<:>
+" set nrformats
+" set number
+" set relativenumber
+" set scroll
+" set scrolljump
+set scrolloff=10
+" set selection
+set noshowmode
+" set sidescroll
+" set sidescrolloff
+set smartcase
+" set timeout
+" set timeoutlen
+" set undolevels
+" set viminfo
+" set visualbell
+set wrapscan
 
 " <C-J>を各モードでエスケープにマッピング
 vnoremap <C-J> <Esc>
@@ -26,23 +49,22 @@ noremap L g_
 noremap H ^
 
 " mapmode-n
-nnoremap <C-o> :<C-u>action Back<CR>
-nnoremap <C-i> :<C-u>action Forward<CR>
-nnoremap <Backspace> :<C-u>action Back<CR>
-nnoremap <S-Backspace> :<C-u>action Forward<CR>
+nnoremap <silent> <C-O> :<C-U>action Back<CR>
+nnoremap <silent> <C-I> :<C-U>action Forward<CR>
+nnoremap <silent> <Backspace> :<C-U>action Back<CR>
+nnoremap <silent> <S-Backspace> :<C-U>action Forward<CR>
+nnoremap <silent> <C-H> :<C-U>action PreviousTab<CR>
+nnoremap <silent> <C-L> :<C-U>action NextTab<CR>
 
-nnoremap K :<C-u>action QuickJavaDoc<CR>
+nnoremap K :<C-U>action QuickJavaDoc<CR>
 
-nnoremap <Space>r :<C-u>action Run<CR>
-nnoremap <Space>d :<C-u>action Debug<CR>
+nnoremap <Space>r :<C-U>action Run<CR>
+nnoremap <Space>d :<C-U>action Debug<CR>
 
 nnoremap <silent> <Space><Space> :<C-U>write<CR>
 
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
-
-nnoremap <C-H> <C-O>
-nnoremap <C-L> <C-I>
 
 nnoremap Q q
 nnoremap <silent> q :<C-U>close<CR>
@@ -61,8 +83,8 @@ vnoremap q <Nop>
 vnoremap qq <Nop>
 
 " mapmode-i
-inoremap <silent> <C-L> <Right>
-inoremap <silent> <C-H> <Left>
+inoremap <C-L> <Right>
+inoremap <C-H> <Left>
 
 inoremap <C-CR> <Esc>o
 
