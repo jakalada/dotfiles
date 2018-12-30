@@ -1,3 +1,6 @@
+" tpope/vim-surround と同じ機能とキーバインドを実現。
+set surround
+
 set nojoinspaces
 
 set incsearch
@@ -23,8 +26,15 @@ noremap L g_
 noremap H ^
 
 " mapmode-n
-nnoremap <Backspace> <C-O>
-nnoremap <S-Backspace> <C-I>
+nnoremap <C-o> :<C-u>action Back<CR>
+nnoremap <C-i> :<C-u>action Forward<CR>
+nnoremap <Backspace> :<C-u>action Back<CR>
+nnoremap <S-Backspace> :<C-u>action Forward<CR>
+
+nnoremap K :<C-u>action QuickJavaDoc<CR>
+
+nnoremap <Space>r :<C-u>action Run<CR>
+nnoremap <Space>d :<C-u>action Debug<CR>
 
 nnoremap <silent> <Space><Space> :<C-U>write<CR>
 
