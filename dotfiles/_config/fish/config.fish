@@ -19,6 +19,7 @@ set ANDROID_HOME /usr/local/share/android-sdk
 #export IDF_PATH=~/esp/esp-idf
 #export PATH=~/esp/xtensa-esp32-elf/bin:$PATH
 
+alias ghq='env SHELL=/usr/local/bin/fish ghq'
 alias ph='peco_select_history'
 alias pg='peco_select_ghq_repository'
 
