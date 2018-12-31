@@ -34,7 +34,7 @@ else
 endif
 
 " vim-plug {{{1
-call plug#begin($DOTVIMDIR . '/plugged')
+call plug#begin('~/.vimplug')
 
 " Colorscheme {{{2
 Plug 'altercation/vim-colors-solarized'
