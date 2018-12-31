@@ -14,6 +14,8 @@ relative_file_path_list=(
 ".tern-project"
 ".bash_profile"
 ".bashrc"
+".vim"
+".vimrc"
 )
 
 cd `dirname $0`
