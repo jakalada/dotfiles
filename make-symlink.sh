@@ -18,9 +18,5 @@ relative_file_path_list=(
 cd `dirname $0`
 
 for name in "${relative_file_path_list[@]}"; do
-  if [ ! -e "$HOME/$name" ]; then
-    ln -s "`pwd`/dotfiles/$name" "$HOME/$name" && echo "created: $HOME/$name"
-  else
-    echo "skip: $HOME/$name"
-  fi
+  ln -s -f "`pwd`/dotfiles/_${name:1}" "$HOME/$name" && echo "created: $HOME/$name"
 done
