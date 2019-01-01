@@ -44,7 +44,6 @@ lnoremap <C-J> <Esc>
 " mapmode-nvo
 noremap j gj
 noremap k gk
-
 noremap L g_
 noremap H ^
 
@@ -55,38 +54,29 @@ nnoremap <silent> <Backspace> :<C-U>action Back<CR>
 nnoremap <silent> <S-Backspace> :<C-U>action Forward<CR>
 nnoremap <silent> <C-H> :<C-U>action PreviousTab<CR>
 nnoremap <silent> <C-L> :<C-U>action NextTab<CR>
-
 nnoremap K :<C-U>action QuickJavaDoc<CR>
-
-nnoremap <Space>r :<C-U>action Run<CR>
-nnoremap <Space>d :<C-U>action Debug<CR>
-
+nnoremap <silent> <Space>r :<C-U>action Run<CR>
+nnoremap <silent> <Space>d :<C-U>action Debug<CR>
+nnoremap <silent> S :<C-U>action RenameElement<CR>
 nnoremap <silent> <Space><Space> :<C-U>write<CR>
-
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
-
 nnoremap Q q
 nnoremap <silent> q :<C-U>close<CR>
-
 nnoremap n nzz
 nnoremap N Nzz
 
 " mapmode-v
 vnoremap > >gv
 vnoremap < <gv
-
 vnoremap ) t)
 vnoremap ( t(
-
 vnoremap q <Nop>
 vnoremap qq <Nop>
 
 " mapmode-i
 inoremap <C-L> <Right>
 inoremap <C-H> <Left>
-
 inoremap <C-CR> <Esc>o
-
-nnoremap <silent> <Space><Space> :<C-U>write<CR>
+inoremap <silent> <C-O> <C-O>:action CodeCompletion<CR>
 
