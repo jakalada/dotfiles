@@ -1,7 +1,18 @@
 fish_vi_key_bindings
 
+# fundle
+set fundle_plugins_dir $HOME/.config/fundle_plugins
+mkdir -p $fundle_plugins_dir
+fundle plugin 'jethrokuan/z'
+fundle plugin '0rax/fish-bd'
+fundle plugin 'decors/fish-ghq'
+fundle plugin 'oh-my-fish/plugin-peco'
+fundle plugin 'yoshiori/fish-peco_select_ghq_repository'
+fundle init
+
 # Homebrew
 set PATH /usr/local/bin $PATH
+
 
 # Go
 set GOPATH ~/go
@@ -26,17 +37,5 @@ alias pg='peco_select_ghq_repository'
 # replacement
 if which rmtrash >/dev/null
   alias rm='rmtrash'
-end
-
-# Fisherでインストールするプラグインのパスを変更
-# REF: https://github.com/jorgebucaran/fisher#changing-the-installation-prefix
-set -g fisher_path ~/.config/fisher
-mkdir -p "$fisher_path/functions"
-mkdir -p "$fisher_path/completions"
-mkdir -p "$fisher_path/conf.d"
-set fish_function_path $fish_function_path[1] $fisher_path/functions $fish_function_path[2..-1]
-set fish_complete_path $fish_complete_path[1] $fisher_path/completions $fish_complete_path[2..-1]
-for file in $fisher_path/conf.d/*.fish
-    builtin source $file 2> /dev/null
 end
 

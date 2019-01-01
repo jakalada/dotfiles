@@ -4,7 +4,6 @@ set -e
 relative_file_path_list=(
 ".config/fish/completions"
 ".config/fish/config.fish"
-".config/fish/fishfile"
 ".config/fish/functions"
 ".config/karabiner/karabiner.json"
 ".gitconfig"
