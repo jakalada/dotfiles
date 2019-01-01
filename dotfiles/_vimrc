@@ -26,11 +26,11 @@ if s:iswin
   set shellslash
   let $DOTVIMDIR = expand('~/vimfiles')
   let $DROPBOXDIR = expand('~/Dropbox')
-  let $VIMCONFIGDIR = expand('~/git/vim-dotfiles')
+  let $VIMCONFIGDIR = expand('~/ghq/github.com/jakalada/dotfiles')
 else
   let $DOTVIMDIR = expand('~/.vim')
   let $DROPBOXDIR = expand('~/Dropbox')
-  let $VIMCONFIGDIR = expand('~/git/vim-dotfiles')
+  let $VIMCONFIGDIR = expand('~/ghq/github.com/jakalada/dotfiles')
 endif
 
 " vim-plug {{{1
