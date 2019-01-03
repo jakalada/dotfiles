@@ -1,5 +1,7 @@
 #!/bin/bash
-set -e
+
+# REF: https://qiita.com/youcune/items/fcfb4ad3d7c1edf9dc96
+set -eu
 
 relative_file_path_list=(
 ".config/fish/completions"

@@ -11,7 +11,15 @@ fundle plugin 'yoshiori/fish-peco_select_ghq_repository'
 fundle init
 
 # Java
-set PATH "$HOME/.jenv/bin" "$PATH"
+#
+# `brew install jenv`でインストールされるjenvのfish向けのスクリプトにシンボリックリンクを貼っているのbashとは異なり何もしない
+#
+#   dotfiles/_config/fish/functions/jenv.fish
+#     -> usr/loca/opt/jenv/libexec/fish/jenv.fish
+#   dotfiles/_config/fish/functions/export.fish
+#     -> usr/loca/opt/jenv/libexec/fish/jenv.fish
+#
+# REF: https://github.com/gcuisinier/jenv#gettings-started
 
 # Go
 set GOPATH "$HOME/go"
