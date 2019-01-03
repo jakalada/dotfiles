@@ -41,6 +41,7 @@ set PATH "$ANDROID_HOME/platform-tools" "$PATH"
 
 alias ghq='env SHELL=/usr/local/bin/fish ghq'
 alias ph='peco_select_history'
+alias pd='peco_select_dirh'
 alias pg='peco_select_ghq_repository'
 
 # replacement
