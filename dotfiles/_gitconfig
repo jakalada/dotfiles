@@ -12,7 +12,9 @@
   editor = vim
   pager = less
   excludesfile = ~/.gitignore.base
-  autocrlf = input
+  autocrlf = false
+  safecrlf = true
+	precomposeunicode = true
 
 [i18n]
   commitencoding = UTF-8

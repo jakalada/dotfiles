@@ -11,21 +11,20 @@ fundle plugin 'yoshiori/fish-peco_select_ghq_repository'
 fundle init
 
 # Java
-set JAVA_HOME (/usr/libexec/java_home -v 11)
-set PATH "$JAVA_HOME/bin" "$PATH"
+set PATH "$HOME/.jenv/bin" "$PATH"
 
 # Go
 set GOPATH "$HOME/go"
-set PATH "$GOPATH/bin" $PATH
+set PATH "$GOPATH/bin" "$PATH"
 
 # Ruby on HomeBrew
-set PATH /usr/local/opt/ruby/bin $PATH
-set PATH /usr/local/lib/ruby/gems/2.6.0/bin $PATH
+set PATH '/usr/local/opt/ruby/bin' "$PATH"
+set PATH '/usr/local/lib/ruby/gems/2.6.0/bin' "$PATH"
 
 # Android
 set ANDROID_HOME "$HOME/Library/Android/sdk"
-set PATH "$ANDROID_HOME/tools/bin" $PATH
-set PATH "$ANDROID_HOME/platform-tools" $PATH
+set PATH "$ANDROID_HOME/tools/bin" "$PATH"
+set PATH "$ANDROID_HOME/platform-tools" "$PATH"
 
 # esp-idf
 # (not set when using FreeRTOS)

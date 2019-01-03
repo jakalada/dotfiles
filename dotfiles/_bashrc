@@ -1,19 +1,19 @@
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home -v 11)
-export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 # Go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 
 # Ruby on HomeBrew
-export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=/usr/local/lib/ruby/gems/2.6.0/bin:$PATH
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
 
 # Android
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$ANDROID_HOME/tools/bin:$PATH
-export PATH=$ANDROID_HOME/platform-tools:$PATH
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools/bin:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 # esp-idf
 # (not set when using FreeRTOS)
