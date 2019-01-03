@@ -23,16 +23,16 @@ fundle init
 
 # Go
 set GOPATH "$HOME/go"
-set PATH "$GOPATH/bin" "$PATH"
+set PATH "$GOPATH/bin" $PATH
 
 # Ruby on HomeBrew
-set PATH '/usr/local/opt/ruby/bin' "$PATH"
-set PATH '/usr/local/lib/ruby/gems/2.6.0/bin' "$PATH"
+set PATH '/usr/local/opt/ruby/bin' $PATH
+set PATH '/usr/local/lib/ruby/gems/2.6.0/bin' $PATH
 
 # Android
 set ANDROID_HOME "$HOME/Library/Android/sdk"
-set PATH "$ANDROID_HOME/tools/bin" "$PATH"
-set PATH "$ANDROID_HOME/platform-tools" "$PATH"
+set PATH "$ANDROID_HOME/tools/bin" $PATH
+set PATH "$ANDROID_HOME/platform-tools" $PATH
 
 # esp-idf
 # (not set when using FreeRTOS)
