@@ -1,1 +1,1 @@
-/usr/local/opt/jenv/libexec/jenv.fish
+/usr/local/opt/jenv/libexec/fish/jenv.fish
