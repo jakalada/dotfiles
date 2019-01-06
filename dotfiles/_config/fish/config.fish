@@ -7,7 +7,6 @@ fundle plugin 'jethrokuan/z'
 fundle plugin '0rax/fish-bd'
 fundle plugin 'decors/fish-ghq'
 fundle plugin 'oh-my-fish/plugin-peco'
-fundle plugin 'yoshiori/fish-peco_select_ghq_repository'
 fundle init
 
 # Java
@@ -39,7 +38,6 @@ set PATH "$ANDROID_HOME/platform-tools" $PATH
 #export IDF_PATH=~/esp/esp-idf
 #export PATH=~/esp/xtensa-esp32-elf/bin:$PATH
 
-alias ghq='env SHELL=/usr/local/bin/fish ghq'
 alias ph='peco_select_history'
 alias pd='peco_select_dirh'
 alias pg='peco_select_ghq_repository'
