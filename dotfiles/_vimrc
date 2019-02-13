@@ -231,6 +231,12 @@ set emoji
 " Options {{{1
 
 if s:isgui
+  " ref. https://blog.ikejima.org/vim/macosx/2017/01/04/macvim-color.html
+  if has('gui_macvim')
+    let g:macvim_skip_colorscheme=1
+    let g:no_gvimrc_example=1
+  endif
+
   let g:PaperColor_Theme_Options = {
         \   'language': {
         \     'python': {
@@ -248,7 +254,7 @@ if s:isgui
   colorscheme PaperColor
 
   if s:ismacunix
-    set guifont=SFMonoSquare-Regular:h15
+    set guifont=Cica-Regular:h15
   elseif s:iswin
     set renderoptions=type:directx,renmode:5
     set guifont=Ricty_Diminished:h11:cANSI:qDRAFT:qANTIALIASED
