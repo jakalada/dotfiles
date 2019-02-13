@@ -248,7 +248,7 @@ if s:isgui
   colorscheme PaperColor
 
   if s:ismacunix
-    set guifont=SourceCodePro-Regular:h13
+    set guifont=SFMonoSquare-Regular:h15
   elseif s:iswin
     set renderoptions=type:directx,renmode:5
     set guifont=Ricty_Diminished:h11:cANSI:qDRAFT:qANTIALIASED
