@@ -10,6 +10,7 @@ relative_file_path_list=(
 ".config/karabiner/karabiner.json"
 ".gitconfig"
 ".gitignore.base"
+".hyper.js"
 ".ideavimrc"
 ".jshintrc"
 ".tern-project"
