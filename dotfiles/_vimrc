@@ -1,5 +1,16 @@
 " jakalada's vimrc
 
+" ==================================================
+" Memo {{{1
+
+" --------------------------------------------------
+" 見出しのルール
+"
+" - 見出し1: '=' を50個
+" - 見出し2: '-' を50個
+" - 見出し3: '-' を30個
+
+" ==================================================
 " Initialize {{{1
 
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -33,9 +44,11 @@ else
   let $VIMCONFIGDIR = expand('~/ghq/github.com/jakalada/dotfiles')
 endif
 
+" ==================================================
 " vim-plug {{{1
 call plug#begin('~/.vimplug')
 
+" --------------------------------------------------
 " Colorscheme {{{2
 Plug 'altercation/vim-colors-solarized'
 Plug 'cocopon/iceberg.vim'
@@ -43,6 +56,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'kamwitsta/flatwhite-vim'
 Plug 'NLKNguyen/papercolor-theme'
 
+" --------------------------------------------------
 " Syntax {{{2
 Plug 'cespare/vim-toml'
 Plug 'dag/vim-fish'
@@ -57,12 +71,14 @@ Plug 'tpope/vim-rails'            " 多機能
 Plug 'udalov/kotlin-vim'
 Plug 'vim-ruby/vim-ruby'
 
+" --------------------------------------------------
 " Git {{{2
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
 Plug 'lambdalisue/vim-gita'
 Plug 'tpope/vim-fugitive'
 
+" --------------------------------------------------
 " 入力補助 {{{2
 Plug 'cohama/lexima.vim'      " 囲み文字の自動入力
 Plug 'godlygeek/tabular'      " コード整形
@@ -71,21 +87,27 @@ Plug 'taku-o/vim-toggle'      " 例: true -> false -> true
 Plug 'tpope/vim-surround'     " 囲み文字に入力補助
 Plug 'tyru/caw.vim'           " コメントアウト
 
+" --------------------------------------------------
 " シンタックスチェック {{{2
 Plug 'w0rp/ale'
 
+" --------------------------------------------------
 " 補完 {{{2
 
+" --------------------------------------------------
 " フォーマッター {{{2
 
+" --------------------------------------------------
 " スニペット {{{2
 
+" --------------------------------------------------
 " 移動 {{{2
 Plug 'kana/vim-altr'          " ユーザー定義の代替ファイル
 Plug 'kana/vim-gf-user'       " ユーザー定義のgf
 Plug 'thinca/vim-visualstar'  " *で選択中の文字列を検索
 
-" UI {{2
+" --------------------------------------------------
+" UI {{{2
 Plug 'itchyny/thumbnail.vim'           " バッファのサムネイル表示
 Plug 'justinmk/vim-dirvish'            " ファイラ
 Plug 'Shougo/vimfiler'                 " ファイラ
@@ -97,9 +119,11 @@ Plug 'ryanoasis/vim-devicons'          " 各種プラグインにNerd Fontを設
 Plug 'Shougo/vinarise'                 " バイナリエディタ
 Plug 'thinca/vim-editvar'              " 変数の値を別バッファで編集
 
+" --------------------------------------------------
 " コンソール連携 {{{2
 Plug 'jpalardy/vim-slime'
 
+" --------------------------------------------------
 " Vimスクリプトライブラリ {{{2
 Plug 'mattn/webapi-vim'                     " Web API
 if !s:iswin
@@ -107,6 +131,7 @@ if !s:iswin
 endif
 Plug 'tpope/vim-dispatch'                   " 非同期処理
 
+" --------------------------------------------------
 " そのほか {{{2
 Plug 'kana/vim-tabpagecd'       " タブページごとにカレントディレクトリを設定する
 Plug 'Shougo/junkfile.vim'      " 日時を名前にしたファイルを作成する
@@ -119,6 +144,7 @@ Plug 'tpope/vim-repeat'         " surroundの挙動もドットで繰り返せ�
 Plug 'tyru/open-browser.vim'    " ブラウザでの表示・検索
 Plug 'vim-jp/vimdoc-ja'         " vimdocの和訳版
 
+" --------------------------------------------------
 " vim-lsp - Language Server Protocol対応 {{{2
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
@@ -126,10 +152,12 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'natebosch/vim-lsc'
 
+" --------------------------------------------------
 " lightline - ステータスバー {{{2
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'   " aleによるシンタックスチェックの結果表示
 
+" --------------------------------------------------
 " Unite {{{2
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/unite-outline'
@@ -139,19 +167,24 @@ Plug 'ujihisa/unite-colorscheme'
 Plug 'ujihisa/unite-font'
 Plug 'ujihisa/unite-locate'
 
+" --------------------------------------------------
 " ref {{{2
 Plug 'thinca/vim-ref'
 
+" --------------------------------------------------
 " metarw - データソースを抽象化して扱うファイラ {{{2
 Plug 'kana/vim-metarw'
 Plug 'kana/vim-metarw-git'
 
+" --------------------------------------------------
 " operator-user ユーザー定義のオペレータ {{{2
 Plug 'kana/vim-operator-user'
 
+" --------------------------------------------------
 " submode ユーザー定義のモード {{{2
 Plug 'kana/vim-submode'
 
+" --------------------------------------------------
 " textobj ユーザー定義のテキストオブジェクト {{{2
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-fold'
@@ -167,6 +200,7 @@ filetype plugin indent on
 syntax enable
 syntax sync fromstart
 
+" ==================================================
 " Commands {{{1
 " .vimrcの再読み込み時に.vimrc内で設定されたautocmdを初期化する {{{
 " MyAutocmdを使用することで漏れなく初期化できる
@@ -201,9 +235,11 @@ else
 endif
 " }}}
 
+" ==================================================
 " Functions {{{1
 
 
+" ==================================================
 " Encoding {{{1
 " fileencodingの設定 {{{
 set fileencodings=iso-2022-jp-3,iso-2022-jp,euc-jisx0213,euc-jp,utf-8,ucs-bom,euc-jp,eucjp-ms,cp932
@@ -230,6 +266,7 @@ set ambiwidth=double
 
 set emoji
 
+" ==================================================
 " Options {{{1
 
 if s:isgui
@@ -394,8 +431,10 @@ set nomodeline
 
 set completeopt-=preview
 
+" ==================================================
 " Mappings {{{1
 
+" --------------------------------------------------
 " IBusで日本語入力に切り替えるたびにスペースが挿入されてしまうのを防ぐ {{{2
 noremap <C-Space> <Nop>
 noremap! <C-Space> <Nop>
@@ -404,6 +443,7 @@ snoremap <C-Space> <Nop>
 lnoremap <C-Space> <Nop>
 
 
+" --------------------------------------------------
 " <C-J>と<C-K>を各モードでエスケープにマッピング {{{2
 nnoremap <silent> <C-J> <Esc>:<C-U>nohlsearch<CR>
 vnoremap <C-J> <Esc>
@@ -424,10 +464,12 @@ snoremap <C-K> <Esc>
 lnoremap <C-K> <Esc>
 
 
+" --------------------------------------------------
 " Leader {{{2
 let g:mapleader = ' '
 let g:maplocalleader = '\'
 
+" --------------------------------------------------
 " mapmode-nvo {{{2
 noremap j gj
 noremap k gk
@@ -439,6 +481,7 @@ noremap <C-H> <C-U>
 noremap <C-L> <C-D>
 
 
+" --------------------------------------------------
 " mapmode-n {{{2
 nnoremap <Leader>k <C-^>
 
@@ -459,6 +502,7 @@ nnoremap n nzz
 nnoremap N Nzz
 
 
+" --------------------------------------------------
 " mapmode-v {{{2
 vnoremap > >gv
 vnoremap < <gv
@@ -483,6 +527,7 @@ function! s:force_blockwise_visual(next_key)
 endfunction
 
 
+" --------------------------------------------------
 " mapmode-i {{{2
 inoremap <silent> <C-L> <Right>
 inoremap <silent> <C-H> <Left>
@@ -492,6 +537,7 @@ inoremap <silent> <F7> <Esc>gUiwea
 inoremap <C-CR> <Esc>o
 
 
+" --------------------------------------------------
 " mapmode-o {{{2
 onoremap / t
 onoremap ? T
@@ -499,7 +545,10 @@ onoremap ? T
 onoremap ) t)
 onoremap ( t(
 
+" ==================================================
 " File Type Plugins {{{1
+
+" --------------------------------------------------
 " c.vim {{{2
 let g:c_gnu = 1
 let g:c_comment_strings = 1
@@ -522,6 +571,7 @@ let g:c_no_if0 = 1
 " let g:c_no_if0_fold = 1
 " let g:c_minlines = 100
 
+" --------------------------------------------------
 " coffee.vim {{{2
 " REF: https://github.com/kchmck/vim-coffee-script
 " helpファイルがないのでREADMEを参照する
@@ -536,18 +586,22 @@ let g:c_no_if0 = 1
 " let g:coffee_watch_vert = 1
 " let g:coffee_run_vert = 1
 
+" --------------------------------------------------
 " cpp.vim {{{2
 " c.vimの変数も採用される
 " let g:cpp_no_cpp11 = 1
 " let g:cpp_no_cpp14 = 1
 
+" --------------------------------------------------
 " csh.vim {{{2
 let g:filetype_csh = 'tcsh'
 
+" --------------------------------------------------
 " html.vim {{{2
 " let g:html_no_rendering = 1
 " let g:html_wrong_comments = 1
 
+" --------------------------------------------------
 " java.vim {{{2
 " let g:java_mark_braces_in_parens_as_errors = 1
 let g:java_highlight_java_lang_ids = 1
@@ -559,6 +613,7 @@ let g:java_css = 1
 let g:java_vb = 1
 " let g:java_minlines = 50
 
+" --------------------------------------------------
 " javascript.vim {{{2
 " REF: https://github.com/pangloss/vim-javascript
 " helpファイルがないのでREADMEを参照する
@@ -574,16 +629,19 @@ let g:javascript_enable_domhtmlcss = 1
 " let g:javascript_conceal_static     = "•"
 " let g:javascript_conceal_super      = "Ω"
 
+" --------------------------------------------------
 " json.vim {{{2
 " REF: https://github.com/elzr/vim-json
 " helpファイルがないのでREADMEを参照する
 " let g:vim_json_syntax_conceal = 0
 " let g:vim_json_syntax_concealcursor = 1
 
+" --------------------------------------------------
 " gabrielelana/vim-markdown {{{2
 let g:markdown_enable_spell_checking = 0
 let g:markdown_enable_conceal = 1
 
+" --------------------------------------------------
 " php.vim {{{2
 let g:php_sql_query = 1
 let g:php_baselib = 1
@@ -596,9 +654,11 @@ let g:php_parent_error_open = 1
 let g:php_folding = 1
 " let g:php_sync_method = x
 
+" --------------------------------------------------
 " python.vim {{{2
 let g:python_highlight_all = 1
 
+" --------------------------------------------------
 " ruby.vim {{{2
 let g:ruby_operators = 1
 let g:ruby_space_errors = 1
@@ -609,12 +669,14 @@ let g:ruby_fold = 1
 " let g:ruby_minlines = 100
 " let g:ruby_spellcheck_strings = 1
 
+" --------------------------------------------------
 " sh.vim {{{2
 let g:is_bash = 1
 let g:sh_fold_enabled = 7
 " let g:sh_minlines = 500
 " let g:sh_maxlines = 100
 
+" --------------------------------------------------
 " vim.vim {{{2
 " let g:vimsyn_minlines = 50
 " let g:vimsyn_maxlines = 50
@@ -622,24 +684,31 @@ let g:vimsyn_embed = 0
 let g:vimsyn_folding = 0
 let g:vimsyntax_noerror = 1
 
+" --------------------------------------------------
 " xml.vim{{{2
 " let g:xml_namespace_transparent=1
 let g:xml_syntax_folding = 1
 
+" ==================================================
 " Plugins {{{1
+
+" --------------------------------------------------
 " vim-toggle {{{2
 nmap - <Plug>ToggleN
 
 
+" --------------------------------------------------
 " matchit.vim {{{2
 let loaded_matchit = 1
 
+" --------------------------------------------------
 " caw.vim " {{{2
 let g:caw_no_default_keymappings = 1
 nmap <C-P> <Plug>(caw:hatpos:toggle)
 vmap <C-P> <Plug>(caw:hatpos:toggle)
 
 
+" --------------------------------------------------
 " vimfiler {{{2
 " 削除時にゴミ箱に移動したい場合
 " windows: vimprocプラグインをインストール
@@ -665,7 +734,9 @@ function! s:init_vimfiler() " {{{
   setlocal nonumber
 endfunction " }}}
 
+" --------------------------------------------------
 " unite.vim {{{2
+
 " unite-variables
 let g:unite_split_rule = 'botright'
 let g:unite_enable_split_vertically = 1
@@ -707,17 +778,21 @@ nnoremap <silent> <SID>[unite-no-quit]m :<C-U>Unite -no-quit -keep-focus -buffer
 nnoremap <silent> <SID>[unite-no-quit]S :<C-U>Unite -no-quit -keep-focus -buffer-name=source source<CR>
 
 
+" --------------------------------------------------
 " unite-line {{{2
 nnoremap <silent> <SID>[unite]l :<C-U>UniteWithCursorWord -buffer-name=line line<CR>
 nnoremap <silent> <SID>[unite-no-quit]l :<C-U>UniteWithCursorWord -no-quit -buffer-name=line line<CR>
 
 
+" --------------------------------------------------
 " unite-menu {{{2
 
+" --------------------------------------------------
 " unite-junkfile {{{2
 nnoremap <silent> <SID>[unite]j :<C-u>Unite -start-insert junkfile/new junkfile<CR>
 
 
+" --------------------------------------------------
 " altr {{{2
 nmap <Leader>n  <Plug>(altr-forward)
 nmap <Leader>p  <Plug>(altr-back)
@@ -728,6 +803,7 @@ call altr#define('src/lib/%.coffee', 'spec/%_spec.coffee')
 call altr#define('src/%.c', 'include/%.h')
 
 
+" --------------------------------------------------
 " unite-neco {{{2
 let s:unite_source = {'name': 'neco'}
 
@@ -750,12 +826,14 @@ endfunction
 call unite#define_source(s:unite_source)
 
 
+" --------------------------------------------------
 " vimshell {{{2
 let g:vimshell_prompt = '$ '
 let g:vimshell_user_prompt = '"[" . getcwd() ."]"'
 
 nnoremap <Leader>s :<C-U>VimShell<CR>
 
+" --------------------------------------------------
 " vim-ref {{{2
 if s:iswin
   let g:ref_pydoc_cmd = 'pydoc.bat'
@@ -776,12 +854,14 @@ function! s:initialize_ref_viewer()
 endfunction
 
 
+" --------------------------------------------------
 " changelog.vim {{{2
 MyAutocmd BufNewFile,BufRead *.changelog setfiletype changelog
 let g:changelog_timeformat = '%Y-%m-%d'
 let g:changelog_username = 'Hideki Hamada (jakalada)'
 
 
+" --------------------------------------------------
 " quickrun.vim {{{2
 let g:quickrun_config = get(g:, 'quickrun_config', {})
 let g:quickrun_config._ = {
@@ -822,16 +902,19 @@ let g:quickrun_config['markdown'] = {
       \}
 
 
+" --------------------------------------------------
 " tagbar {{{2
 let g:tagbar_sort = 0
 nnoremap <silent> <Leader>t :<C-U>TagbarToggle<CR>
 
 
+" --------------------------------------------------
 " open-browser.vim  {{{2
 nmap <C-O> <Plug>(openbrowser-smart-search)
 vmap <C-O> <Plug>(openbrowser-smart-search)
 
 
+" --------------------------------------------------
 " quickhl.vim {{{2
 nmap <Leader>m <Plug>(quickhl-manual-this)
 xmap <Leader>m <Plug>(quickhl-manual-this)
@@ -842,12 +925,14 @@ nmap <Leader>j <Plug>(quickhl-cword-toggle)
 nmap <Leader>] <Plug>(quickhl-tag-toggle)
 
 
+" --------------------------------------------------
 " Alignta {{{2
 vnoremap aa :Alignta
 vnoremap a= :Alignta =<CR>
 vnoremap a+ :Alignta +<CR>
 
 
+" --------------------------------------------------
 " textobj-multiblock {{{2
 omap a; <Plug>(textobj-multiblock-a)
 omap i; <Plug>(textobj-multiblock-i)
@@ -866,10 +951,12 @@ let g:textobj_multiblock_blocks = [
       \]
 
 
+" --------------------------------------------------
 " gitgutter {{{2
 let g:gitgutter_enabled = 1
 nnoremap <Leader>gg  :<C-u>GitGutterToggle<CR>
 
+" --------------------------------------------------
 " lightline {{{2
 let g:lightline = {}
 
@@ -952,34 +1039,43 @@ function! LightLineFileformat()
   return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
+" --------------------------------------------------
 " markdown {{{2
 let g:vim_markdown_folding_level = 2
 
+" --------------------------------------------------
 " vim-slime {{{2
 let g:slime_target = "tmux"
 
+" --------------------------------------------------
 " vim-indent-guides {{{2
 let g:indent_guides_enable_on_vim_startup = 0
 let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 4
 let g:indent_guides_default_mapping = 0
 
+" --------------------------------------------------
 " vim-clang-format {{{2
 let g:clang_format#auto_format = 0
 let g:clang_format#code_style = 'google'
 
+" --------------------------------------------------
 " vim-go {{{2
 let g:go_fmt_command = "goimports"
 
+" --------------------------------------------------
 " ale {{{2
 let g:ale_fix_on_save = 1
 
+" --------------------------------------------------
 " asynccomplete {{{2
 let g:asyncomplete_smart_completion = 1
 
+" --------------------------------------------------
 " asynccomplete-lsp {{{2
 let g:lsp_async_completion = 1
 
+" --------------------------------------------------
 " vim-lsp {{{2
 let g:lsp_signs_enabled = 1           " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
@@ -1065,7 +1161,10 @@ if executable('typescript-language-server')
       \ })
 endif
 
+" ==================================================
 " Misc {{{1
+
+" --------------------------------------------------
 " 折りたたみ {{{2
 nnoremap <SID>[fold] <Nop>
 xnoremap <SID>[fold] <Nop>
@@ -1103,6 +1202,7 @@ noremap <silent> <SID>[fold]9 :<C-U>setl foldlevel=9<CR>
 set foldtext=getline(v:foldstart)
 
 
+" --------------------------------------------------
 " タブページ {{{2
 nnoremap <SID>[tab] <Nop>
 nmap t <SID>[tab]
@@ -1120,6 +1220,7 @@ nnoremap <silent> <SID>[tabnew]v :<C-U>tabnew \| lcd $VIMCONFIGDIR<CR>
 
 set showtabline=2
 
+" --------------------------------------------------
 " ウィンドウ {{{2
 nnoremap <SID>[window] <Nop>
 nmap <Leader>w <SID>[window]
@@ -1138,6 +1239,7 @@ nnoremap <silent> <SID>(split-to-h) :<C-U>execute 'topleft'    (v:count == 0 ? '
 nnoremap <silent> <SID>(split-to-l) :<C-U>execute 'botright'   (v:count == 0 ? '' : v:count) 'vsplit'<CR>
 
 
+" --------------------------------------------------
 " コマンドラインウィンドウ {{{2
 nnoremap <silent> ; q:
 xnoremap <silent> ; q:
@@ -1156,18 +1258,21 @@ endfunction " }}}
 
 
 
+" --------------------------------------------------
 " 空行を追加と削除を容易にする {{{2
 " REF: http://deris.hatenablog.jp/entry/20130404/1365086716
 nnoremap <silent> <Leader>o   :<C-u>for i in range(1, v:count1) \| call append(line('.'),   '') \| endfor \| silent! call repeat#set("<Leader>o", v:count1)<CR>
 nnoremap <silent> <Leader>O   :<C-u>for i in range(1, v:count1) \| call append(line('.')-1, '') \| endfor \| silent! call repeat#set("<Leader>O", v:count1)<CR>
 
 
+" --------------------------------------------------
 " 最後に編集した位置に移動する {{{2
 MyAutocmd BufReadPost *
       \ if line("'\"") > 1 && line("'\"") <= line("$") |
       \   exe "normal! g`\"" |
       \ endif
 
+" --------------------------------------------------
 " カーソル位置を移動せずにファイル全体を整形する {{{2
 " http://kannokanno.hatenablog.com/entry/2014/03/16/160109
 function! s:format_file()
