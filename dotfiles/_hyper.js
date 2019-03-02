@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: 'stable',
 
     // default font size in pixels for all tabs
-    fontSize: 16,
+    fontSize: 13,
 
     // font family with optional fallbacks
-    fontFamily: '"SF Mono Square"',
+    fontFamily: '"Source Code Pro"',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -24,13 +24,13 @@ module.exports = {
     lineHeight: 1.5,
 
     // letter spacing as a relative unit
-    letterSpacing: 0,
+    letterSpacing: 1,
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
     cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
-    cursorBlink: true,
+    cursorBlink: false,
 
     // custom CSS to embed in the main window
     css: '',

@@ -250,7 +250,7 @@ if s:isgui
         \     }
         \   }
         \ }
-  set background=light
+  set background=dark
   colorscheme PaperColor
 
   if s:ismacunix
@@ -270,7 +270,7 @@ if s:isgui
   set novisualbell
   set guicursor+=a:blinkon0
 else
-  set background=light
+  set background=dark
   colorscheme PaperColor
 endif
 
