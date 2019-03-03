@@ -44,6 +44,7 @@ set -x PATH "$ANDROID_HOME/platform-tools" $PATH
 alias ph='peco_select_history'
 alias pd='peco_select_dirh'
 alias pg='peco_select_ghq_repository'
+alias lsc='colorls -lA --sd'
 
 # replacement
 if which rmtrash >/dev/null
