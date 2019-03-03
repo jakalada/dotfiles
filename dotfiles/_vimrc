@@ -110,12 +110,12 @@ Plug 'thinca/vim-visualstar'  " *で選択中の文字列を検索
 " UI {{{2
 Plug 'itchyny/thumbnail.vim'           " バッファのサムネイル表示
 Plug 'justinmk/vim-dirvish'            " ファイラ
+Plug 'kristijanhusak/vim-dirvish-git'  " dirvishでファイルごとにGitの状態を表示
 Plug 'Shougo/vimfiler'                 " ファイラ
 Plug 'previm/previm'                   " Markdownのプレビュー表示
 Plug 'majutsushi/tagbar'               " タグのサイドバー表示
 Plug 'mattn/calendar-vim'              " カレンダー表示
 Plug 'nathanaelkane/vim-indent-guides' " インデント表示
-Plug 'ryanoasis/vim-devicons'          " 各種プラグインにNerd Fontを設定してくれる
 Plug 'Shougo/vinarise'                 " バイナリエディタ
 Plug 'thinca/vim-editvar'              " 変数の値を別バッファで編集
 
@@ -193,6 +193,10 @@ Plug 'kana/vim-textobj-lastpat'
 Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-syntax'
 Plug 'osyo-manga/vim-textobj-multiblock'
+
+" --------------------------------------------------
+" 依存関係の解決のために最後に記述するプラグイン {{{2
+Plug 'ryanoasis/vim-devicons'          " 各種プラグインにNerd Fontを設定してくれる
 
 call plug#end()
 
@@ -726,8 +730,8 @@ let g:vimfiler_ignore_pattern = '\(^\.\|\~$\|\.pyc$\|\.[oad]$\|^__pycache__$\|\.
 let g:vimfiler_time_format        = '%Y/%m/%d %H:%M'  " 例: 2013/01/01 00:00
 let g:vimfiler_force_overwrite_statusline = 0
 
-nnoremap <silent> <Leader>e :<C-U>VimFilerExplorer -toggle<CR>
-nnoremap <silent> <Leader>E :<C-U>VimFilerCurrentDir -toggle<CR>
+" nnoremap <silent> <Leader>e :<C-U>VimFilerExplorer -toggle<CR>
+" nnoremap <silent> <Leader>E :<C-U>VimFilerCurrentDir -toggle<CR>
 
 MyAutocmd Filetype vimfiler call s:init_vimfiler()
 function! s:init_vimfiler() " {{{
@@ -1080,6 +1084,36 @@ let g:lsp_async_completion = 1
 let g:lsp_signs_enabled = 1           " enable signs
 let g:lsp_diagnostics_echo_cursor = 1 " enable echo under cursor when in normal mode
 let g:lsp_preview_keep_focus = 0
+
+" --------------------------------------------------
+" vim-devicons {{{2
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_unite = 1
+let g:webdevicons_enable_vimfiler = 1
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
+let g:webdevicons_enable_denite = 1
+
+" --------------------------------------------------
+" vim-dirvish {{{2
+nnoremap <silent> <Leader>e :<C-U>Dirvish<CR>
+
+" --------------------------------------------------
+" vim-dirvish-git {{{2
+let g:dirvish_git_show_ignored = 0
+let g:dirvish_git_indicators = {
+      \ 'Modified'  : '',
+      \ 'Staged'    : '',
+      \ 'Untracked' : '',
+      \ 'Renamed'   : '',
+      \ 'Unmerged'  : '',
+      \ 'Ignored'   : '',
+      \ 'Unknown'   : ''
+      \ }
+MyAutocmd Filetype dirvish call s:init_dirvish()
+function! s:init_dirvish() " {{{
+  nmap <buffer> l <CR>
+  nmap <buffer> h -
+endfunction " }}}
 
 " For Python
 "   $ pip install python-language-server
