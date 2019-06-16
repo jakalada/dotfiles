@@ -25,9 +25,9 @@ brew install yarn
 # prettier
 brew install prettier
 
-# npm
+# yarn
 # ===
 
 # textlint
-npm install -g textlint
-npm install -g textlint-rule-preset-ja-technical-writing
+yarn global install textlint
+yarn global install textlint-rule-preset-ja-technical-writing
