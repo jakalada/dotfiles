@@ -12,3 +12,6 @@ brew cask install adoptopenjdk11
 
 # jenv
 brew install jenv
+
+# vim
+brew install --HEAD
