@@ -1,6 +1,6 @@
 [user]
-	name = Hideki Hamada (jakalada)
-	email = jakalada.net@gmail.com
+  name = Hideki Hamada (jakalada)
+  email = jakalada.net@gmail.com
 
 [github]
   user = jakalada
@@ -14,7 +14,7 @@
   excludesfile = ~/.gitignore.base
   autocrlf = false
   safecrlf = true
-	precomposeunicode = true
+  precomposeunicode = true
 
 [i18n]
   commitencoding = UTF-8
@@ -64,7 +64,7 @@
           ' -"
 
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  lean = git-lfs clean -- %f
+  mudge = git-lfs smudge -- %f
+  rocess = git-lfs filter-process
+  equired = true
