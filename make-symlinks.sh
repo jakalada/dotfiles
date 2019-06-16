@@ -14,6 +14,7 @@ relative_file_path_list=(
 ".ideavimrc"
 ".jshintrc"
 ".tern-project"
+".textlintrc"
 ".bash_profile"
 ".bashrc"
 ".vim"

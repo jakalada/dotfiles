@@ -3,6 +3,9 @@
 # REF: https://qiita.com/youcune/items/fcfb4ad3d7c1edf9dc96
 set -eu
 
+# Homebrew
+# ========
+
 # Java
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk8
@@ -18,3 +21,10 @@ brew install --HEAD
 
 # prettier
 brew install prettier
+
+# npm
+# ===
+
+# textlint
+npm install -g textlint
+npm install -g textlint-rule-preset-ja-technical-writing
