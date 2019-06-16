@@ -1199,14 +1199,16 @@ function! s:init_dirvish() " {{{
   nmap <buffer> l <CR>
   nmap <buffer> h -
 endfunction " }}}
+
 " --------------------------------------------------
 " lexima.vim {{{2
 let g:lexima_enable_space_rules = 0
 
+" --------------------------------------------------
 " vim-prettier {{{2
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
-autocmd BufWritePre,TextChanged,InsertLeave *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 " ==================================================
 " Misc {{{1
