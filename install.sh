@@ -19,6 +19,9 @@ brew install jenv
 # vim
 brew install --HEAD
 
+# yarn
+brew install yarn
+
 # prettier
 brew install prettier
 
