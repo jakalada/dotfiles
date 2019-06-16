@@ -1,9 +1,5 @@
-[user]
-  name = Hideki Hamada (jakalada)
-  email = jakalada.net@gmail.com
-
-[github]
-  user = jakalada
+[include]
+  path = .gitconfig.local
 
 [ghq]
   root = ~/ghq
