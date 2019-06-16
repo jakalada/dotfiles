@@ -372,9 +372,7 @@ set helplang=ja
 MyAutocmd WinEnter * checktime
 set autoread
 
-if s:isgui || has('xterm_clipboard')
-  set clipboard=unnamed
-endif
+set clipboard=unnamed
 
 set showfulltag
 set tagbsearch
