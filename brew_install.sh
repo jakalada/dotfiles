@@ -15,3 +15,6 @@ brew install jenv
 
 # vim
 brew install --HEAD
+
+# prettier
+brew install prettier
