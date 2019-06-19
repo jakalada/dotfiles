@@ -55,6 +55,7 @@ Plug 'cocopon/iceberg.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'kamwitsta/flatwhite-vim'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'rainglow/vim'
 
 " --------------------------------------------------
 " Syntax {{{2
@@ -274,6 +275,7 @@ set emoji
 " ==================================================
 " Options {{{1
 
+MyAutocmd ColorScheme * set nocursorline
 if s:isgui
   " ref. https://blog.ikejima.org/vim/macosx/2017/01/04/macvim-color.html
   if has('gui_macvim')
@@ -281,21 +283,7 @@ if s:isgui
     let g:no_gvimrc_example=1
   endif
 
-  let g:PaperColor_Theme_Options = {
-        \   'language': {
-        \     'python': {
-        \       'highlight_builtins' : 1
-        \     },
-        \     'cpp': {
-        \       'highlight_standard_library': 1
-        \     },
-        \     'c': {
-        \       'highlight_builtins' : 1
-        \     }
-        \   }
-        \ }
-  set background=dark
-  colorscheme PaperColor
+  colorscheme bold
 
   if s:ismacunix
     set guifont=Cica-Regular:h15
@@ -314,8 +302,11 @@ if s:isgui
   set novisualbell
   set guicursor+=a:blinkon0
 else
-  set background=dark
-  colorscheme PaperColor
+  set termguicolors
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+  colorscheme bold
 endif
 
 set noimcmdline
@@ -324,7 +315,7 @@ set imsearch=0
 
 set pumheight=10
 
-set cursorline
+set nocursorline
 set cmdheight=1
 
 set signcolumn=yes
@@ -1200,6 +1191,7 @@ MyAutocmd Filetype dirvish call s:init_dirvish()
 function! s:init_dirvish() " {{{
   nmap <buffer> l <CR>
   nmap <buffer> h -
+  set nocursorline
 endfunction " }}}
 
 " --------------------------------------------------
