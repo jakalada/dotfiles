@@ -17,7 +17,7 @@ brew cask install adoptopenjdk11
 brew install jenv
 
 # vim
-brew install --HEAD
+brew install vim --HEAD
 
 # yarn
 brew install yarn
@@ -29,5 +29,5 @@ brew install prettier
 # ===
 
 # textlint
-yarn global install textlint
-yarn global install textlint-rule-preset-ja-technical-writing
+yarn global add textlint
+yarn global add textlint-rule-preset-ja-technical-writing
