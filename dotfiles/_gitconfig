@@ -1,5 +1,5 @@
-[include]
-  path = .gitconfig.local
+[user]
+  useConfigOnly = true
 
 [ghq]
   root = ~/ghq
