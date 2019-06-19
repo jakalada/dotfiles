@@ -58,7 +58,7 @@ nnoremap K :<C-U>action QuickJavaDoc<CR>
 nnoremap <silent> <Space>r :<C-U>action Run<CR>
 nnoremap <silent> <Space>d :<C-U>action Debug<CR>
 nnoremap <silent> S :<C-U>action RenameElement<CR>
-nnoremap <silent> <Space><Space> :<C-U>write<CR>
+nnoremap <silent> <Space><Space> :<C-U>action SaveAll<CR>
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
 nnoremap Q q
