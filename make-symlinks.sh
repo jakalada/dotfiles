@@ -9,7 +9,6 @@ relative_file_path_list=(
 ".config/fish/functions"
 ".config/karabiner/karabiner.json"
 ".gitconfig"
-".gitconfig.local"
 ".gitignore.base"
 ".hyper.js"
 ".ideavimrc"
