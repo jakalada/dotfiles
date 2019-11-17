@@ -283,7 +283,7 @@ if s:isgui
     let g:no_gvimrc_example=1
   endif
 
-  colorscheme bold
+  colorscheme PaperColor
 
   if s:ismacunix
     set guifont=Cica-Regular:h15
@@ -306,7 +306,7 @@ else
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-  colorscheme bold
+  colorscheme PaperColor
 endif
 
 set noimcmdline
@@ -634,7 +634,7 @@ let g:javascript_enable_domhtmlcss = 1
 " plasticboy/vim-markdown {{{2
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_no_default_key_mappings = 1
-let g:vim_markdown_conceal = 1
+let g:vim_markdown_conceal = 0
 let g:vim_markdown_auto_insert_bullets = 1
 let g:vim_markdown_new_list_item_indent = 0
 
@@ -1175,6 +1175,14 @@ let g:webdevicons_enable_denite = 1
 " vim-dirvish {{{2
 nnoremap <silent> <Leader>e :<C-U>Dirvish<CR>
 
+MyAutocmd Filetype dirvish call s:init_dirvish()
+function! s:init_dirvish() " {{{
+  nmap <buffer> l <CR>
+  nmap <buffer> h <Plug>(dirvish_up)
+  nmap <buffer> q <Plug>(dirvish_quit)
+  set nocursorline
+endfunction " }}}
+
 " --------------------------------------------------
 " vim-dirvish-git {{{2
 let g:dirvish_git_show_ignored = 0
@@ -1187,12 +1195,6 @@ let g:dirvish_git_indicators = {
       \ 'Ignored'   : '',
       \ 'Unknown'   : ''
       \ }
-MyAutocmd Filetype dirvish call s:init_dirvish()
-function! s:init_dirvish() " {{{
-  nmap <buffer> l <CR>
-  nmap <buffer> h -
-  set nocursorline
-endfunction " }}}
 
 " --------------------------------------------------
 " lexima.vim {{{2
@@ -1202,7 +1204,7 @@ let g:lexima_enable_space_rules = 0
 " vim-prettier {{{2
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.vue,*.yaml,*.html PrettierAsync
 
 " ==================================================
 " Misc {{{1

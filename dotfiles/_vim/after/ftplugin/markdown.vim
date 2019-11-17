@@ -10,8 +10,6 @@ setlocal softtabstop=2
 
 setlocal shiftround
 
-setlocal conceallevel=2
-
 setlocal formatoptions=
 setlocal formatoptions+=r
 setlocal formatoptions+=o

@@ -45,6 +45,10 @@ alias ph='peco_select_history'
 alias pd='peco_select_dirh'
 alias pg='peco_select_ghq_repository'
 alias lsc='colorls -lA --sd'
+alias ll='exa -l'
+alias ls='exa'
+alias cat='bat'
+
 
 # replacement
 if which rmtrash >/dev/null
