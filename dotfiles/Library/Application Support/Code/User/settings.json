@@ -1,1 +1,156 @@
-{}
+{
+    // vim key mappigns
+    "vim.insertModeKeyBindings": [],
+    "vim.insertModeKeyBindingsNonRecursive": [],
+    "vim.normalModeKeyBindings": [],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>",
+                "<space>"
+            ],
+            "commands": [
+                {
+                    "command": ":write"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<Esc>"
+            ],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "g",
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<CR>"
+            ],
+            "after": [
+                "<C-]>"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "g",
+                "_"
+            ]
+        },
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    // vim settings
+    "vim.cursorStylePerMode.insert": "line-thin",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block-outline",
+    "vim.cursorStylePerMode.visual": "line-thin",
+    "vim.cursorStylePerMode.visualblock": "line-thin",
+    "vim.cursorStylePerMode.visualline": "line-thin",
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.easymotion": true,
+    "vim.easymotionKeys": "asdfjkl",
+    "vim.easymotionMarkerBackgroundColor": "#004d40",
+    "vim.easymotionMarkerFontFamily": "Cica",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerForegroundColorOneChar": "#e0f2f1",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#00796b",
+    "vim.easymotionMarkerHeight": 18,
+    "vim.easymotionMarkerYOffset": 2,
+    "vim.gdefault": true,
+    "vim.highlightedyank.enable": true,
+    "vim.history": 100,
+    "vim.hlsearch": true,
+    "vim.statusBarColorControl": true,
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "vim.timeout": 0
+}
