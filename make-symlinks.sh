@@ -34,5 +34,5 @@ for name in "${relative_file_path_list[@]}"; do
   fi
 
   # 各ファイル、ディレクトリのシンボリックリンクを作成
-  ln -s -f -F -h "`pwd`/dotfiles/_${name:1}" "$HOME/$name" && echo "created: $HOME/$name"
+  ln -s -f -F -h "`pwd`/dotfiles/${name}" "$HOME/$name" && echo "created: $HOME/$name"
 done
