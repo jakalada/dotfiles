@@ -19,6 +19,7 @@ relative_file_path_list=(
 ".bashrc"
 ".vim"
 ".vimrc"
+".xvimrc"
 )
 
 cd $(dirname $0)

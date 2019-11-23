@@ -1,0 +1,54 @@
+" XVim2がサポートしているオプション
+" ref. https://github.com/XVimProject/XVim2/blob/master/Documents/FeatureList.md#options
+
+set ignorecase
+" set wrap
+set wrapscan
+" set errorbells
+set incsearch
+" set gdefault
+set smartcase
+" set number
+set hlsearch
+set expandtab
+" set guioptions
+set timeoutlen=750
+set laststatus=2
+set clipboard=unnamed
+" set vimregex
+" set relativenumber
+" set alwaysuseinputsource
+" set blinkcursor
+" set startofline
+
+" mapmode-nvo
+" noremap j gj
+" noremap k gk
+" noremap L g_
+noremap L $
+noremap H ^
+
+" mapmode-n
+" nnoremap <Backspace> <C-O>
+" nnoremap <S-Backspace> <C-I>
+" nnoremap <silent> <Space><Space> :w<CR>
+nnoremap <C-Up> <C-A>
+nnoremap <C-Down> <C-X>
+nnoremap Q q
+" nnoremap <silent> q :<C-U>close<CR>
+nnoremap n nzz
+nnoremap N Nzz
+
+" mapmode-v
+vnoremap > >gv
+vnoremap < <gv
+vnoremap ) t)
+vnoremap ( t(
+vnoremap q <Nop>
+vnoremap qq <Nop>
+
+" mapmode-i
+" inoremap <C-L> <Right>
+" inoremap <C-H> <Left>
+inoremap <C-CR> <Esc>o
+
