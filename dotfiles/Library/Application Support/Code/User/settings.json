@@ -171,5 +171,6 @@
     "markdown.extension.showExplorer": true,
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.extension.toc.githubCompatibility": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "git.autofetch": true
 }
