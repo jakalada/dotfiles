@@ -4,6 +4,8 @@
 set -eu
 
 relative_file_path_list=(
+"Library/Application Support/Code/User/settings.json"
+"Library/Application Support/Code/User/keybindings.json"
 ".config/fish/completions"
 ".config/fish/config.fish"
 ".config/fish/functions"
@@ -26,7 +28,7 @@ cd $(dirname $0)
 
 for name in "${relative_file_path_list[@]}"; do
   # 存在しないディレクトリを作成
-  dir_path=$(dirname $name)
+  dir_path=$(dirname "$name")
   if [ "${dir_path}" != "." ]; then
     mkdir -p "$HOME/${dir_path}"
   fi
