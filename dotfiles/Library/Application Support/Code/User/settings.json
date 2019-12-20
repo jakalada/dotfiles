@@ -172,5 +172,9 @@
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.extension.toc.githubCompatibility": true,
     "editor.formatOnType": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2
 }
