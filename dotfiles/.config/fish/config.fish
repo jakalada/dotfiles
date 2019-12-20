@@ -55,3 +55,5 @@ if which rmtrash >/dev/null
   alias rm='rmtrash'
 end
 
+# starship
+starship init fish | source

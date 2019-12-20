@@ -25,6 +25,9 @@ brew install yarn
 # prettier
 brew install prettier
 
+# starship
+brew install starship
+
 # yarn
 # ===
 
