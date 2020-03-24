@@ -19,7 +19,7 @@ set matchpairs+=<:>
 " set relativenumber
 " set scroll
 " set scrolljump
-set scrolloff=10
+set scrolloff=0
 " set selection
 set noshowmode
 " set sidescroll

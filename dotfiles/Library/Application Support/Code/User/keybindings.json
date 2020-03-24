@@ -31,5 +31,9 @@
     {
         "key": "ctrl+l",
         "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "shift+cmd+i",
+        "command": "outline.focus"
     }
 ]

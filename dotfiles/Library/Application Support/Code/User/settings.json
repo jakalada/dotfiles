@@ -148,9 +148,12 @@
     "vim.useSystemClipboard": true,
     "vim.visualstar": true,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "[Tomorrow]": {
+            "editor.background": "#f7f7f7"
+        },
+        "statusBar.background": "#007acc",
+        "statusBar.noFolderBackground": "#007acc",
+        "statusBar.debuggingBackground": "#007acc"
     },
     "vim.timeout": 0,
     "vim.autoSwitchInputMethod.enable": true,
@@ -158,7 +161,6 @@
     "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
     "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
     "editor.fontFamily": "Cica",
-    "editor.fontSize": 16,
     "files.autoSave": "afterDelay",
     "editor.renderWhitespace": "selection",
     "editor.formatOnPaste": true,
@@ -176,5 +178,18 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Tomorrow",
+    "editor.fontSize": 16,
+    "code-runner.executorMap": {
+        "kotlin": "kotlinc -script"
+    },
+    "git.enableSmartCommit": true,
+    "editor.minimap.enabled": false,
+    "[markdown]": {
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 80,
+        "editor.quickSuggestions": true
+    },
 }
