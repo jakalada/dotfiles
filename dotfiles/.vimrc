@@ -123,6 +123,8 @@ Plug 'thinca/vim-editvar'              " 変数の値を別バッファで編集
 Plug 'Shougo/defx.nvim'                " ファイラ
 Plug 'roxma/nvim-yarp'                 " defx.nvimに必要
 Plug 'roxma/vim-hug-neovim-rpc'        " defx.nvimに必要
+Plug 'kristijanhusak/defx-git'         " defx.nvimでgitのstatus表示
+Plug 'kristijanhusak/defx-icons'        " defx.nvimのNerd font icon対応
 
 " --------------------------------------------------
 " コンソール連携 {{{2
@@ -1200,6 +1202,10 @@ MyAutocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.g
 " --------------------------------------------------
 " defx.nvim {{{2
 nnoremap <silent> <Leader>e :<C-U>Defx<CR>
+call defx#custom#option('_', {
+      \ 'columns': 'indent:git:icons:filename:mark',
+      \ 'show_ignored_files': 1,
+      \ })
 
 MyAutocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
