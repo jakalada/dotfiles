@@ -23,6 +23,8 @@ fundle init
 set -x LANG "ja_JP.UTF-8"
 set -x LC_ALL "ja_JP.UTF-8"
 
+set -x PATH '/usr/local/bin' $PATH
+
 # Go
 set -x GOPATH "$HOME/go"
 set -x PATH "$GOPATH/bin" $PATH
