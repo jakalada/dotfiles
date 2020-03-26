@@ -10,6 +10,7 @@ relative_file_path_list=(
 ".config/fish/config.fish"
 ".config/fish/functions"
 ".config/karabiner/karabiner.json"
+".config/nvim"
 ".gitconfig"
 ".gitignore.base"
 ".hyper.js"
