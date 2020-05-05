@@ -1063,7 +1063,6 @@ let g:clang_format#code_style = 'google'
 
 " --------------------------------------------------
 " vim-go {{{2
-let g:go_fmt_command = "goimports"
 
 " --------------------------------------------------
 " ale {{{2
