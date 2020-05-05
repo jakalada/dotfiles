@@ -59,7 +59,7 @@
         },
         {
             "before": [
-                "<space>",
+                "<leader>",
                 "r"
             ],
             "commands": [
@@ -122,6 +122,7 @@
         }
     ],
     // vim settings
+    "vim.leader": " ",
     "vim.cursorStylePerMode.insert": "line-thin",
     "vim.cursorStylePerMode.normal": "block",
     "vim.cursorStylePerMode.replace": "block-outline",
@@ -190,6 +191,7 @@
         "editor.quickSuggestions": true
     },
     "json.schemas": [
+
 
     
     ],
