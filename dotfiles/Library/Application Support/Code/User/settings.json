@@ -65,7 +65,17 @@
             "commands": [
                 "code-runner.run"
             ]
-        }
+        },
+        {
+            "before": [
+                "v"
+            ],
+            "after": [
+                "v",
+                "h",
+                "l",
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [],
     "vim.visualModeKeyBindingsNonRecursive": [
@@ -191,6 +201,7 @@
         "editor.quickSuggestions": true
     },
     "json.schemas": [
+
 
 
     
