@@ -6,17 +6,6 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "<space>",
-                "<space>"
-            ],
-            "commands": [
-                {
-                    "command": ":write"
-                }
-            ]
-        },
-        {
-            "before": [
                 "<Esc>"
             ],
             "commands": [
@@ -66,6 +55,15 @@
             ],
             "after": [
                 "<C-]>"
+            ]
+        },
+        {
+            "before": [
+                "<space>",
+                "r"
+            ],
+            "commands": [
+                "code-runner.run"
             ]
         }
     ],
@@ -155,7 +153,6 @@
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
-    "vim.timeout": 0,
     "vim.autoSwitchInputMethod.enable": true,
     "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
     "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
@@ -192,4 +189,8 @@
         "editor.wordWrapColumn": 80,
         "editor.quickSuggestions": true
     },
+    "json.schemas": [
+
+    
+    ],
 }
