@@ -11,7 +11,7 @@
         "revision": "8cfc957ed337e93ef3a69256615e012b72fbbc54"
       },
       "homebrew/cask": {
-        "revision": "6d693c1a46673a5b6887481279dd6a8d27be8760"
+        "revision": "5cac4cd1d7060452cd2216ae093b28a5ed53f3a9"
       },
       "homebrew/core": {
         "revision": "affeebfbade77e484c13d712ebd0b32f900495dc"
@@ -574,6 +574,27 @@
           "args": [
             "HEAD"
           ]
+        }
+      },
+      "watchman": {
+        "version": "4.9.0_4",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/watchman-4.9.0_4.catalina.bottle.tar.gz",
+              "sha256": "7840f564c11d33425c9eb8985f9156e782e66ef2a3578329dba83ee15a9bf0be"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/watchman-4.9.0_4.mojave.bottle.tar.gz",
+              "sha256": "ba2338b0f23c8b8817fd7bfa92466b7a97ab416e93ec6c3a400041aef013de86"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/watchman-4.9.0_4.high_sierra.bottle.tar.gz",
+              "sha256": "150468653b5c5a8e4eb92a3ecf420f157ed0e4772513ee93425bb3f635964dad"
+            }
+          }
         }
       }
     },
