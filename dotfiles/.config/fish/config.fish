@@ -29,7 +29,7 @@ set -x PATH '/usr/local/bin' $PATH
 set -x GOPATH "$HOME/go"
 set -x PATH "$GOPATH/bin" $PATH
 
-# Ruby on HomeBrew
+# Ruby on Homebrew
 set -x PATH '/usr/local/opt/ruby/bin' $PATH
 set -x PATH '/usr/local/lib/ruby/gems/2.6.0/bin' $PATH
 

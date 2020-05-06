@@ -11,10 +11,10 @@
         "revision": "8cfc957ed337e93ef3a69256615e012b72fbbc54"
       },
       "homebrew/cask": {
-        "revision": "227696074f854761414b5f67d5657e573e579a42"
+        "revision": "6d693c1a46673a5b6887481279dd6a8d27be8760"
       },
       "homebrew/core": {
-        "revision": "ea405af68664fd47a820a836b7e0b557e5af74d5"
+        "revision": "affeebfbade77e484c13d712ebd0b32f900495dc"
       },
       "universal-ctags/universal-ctags": {
         "revision": "faaef55ab7b513529e06d454d49d973ede007151"
@@ -46,6 +46,27 @@
             "sierra": {
               "url": "https://homebrew.bintray.com/bottles/anyenv-1.1.1.sierra.bottle.tar.gz",
               "sha256": "c4073892fe99575a1f23eb24714392f098c2980eaaf465a9a8641d955da08306"
+            }
+          }
+        }
+      },
+      "python@3.8": {
+        "version": "3.8.2",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/python@3.8-3.8.2.catalina.bottle.tar.gz",
+              "sha256": "4bd9406b5d69313fcef3e572f85398ff9d7e2ab34eaf40c087bd0b4e87439ea8"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/python@3.8-3.8.2.mojave.bottle.tar.gz",
+              "sha256": "511b4f2c3993f000516938ed0700936c8a7d8c054b5171fa733ac7d344291c30"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/python@3.8-3.8.2.high_sierra.bottle.tar.gz",
+              "sha256": "86652428afa471b42ddba7028de02767d933f35f55e538b362c9cc219e972405"
             }
           }
         }
@@ -548,7 +569,13 @@
         "bottle": false
       },
       "delphinus/sfmono-square/sfmono-square": null,
-      "universal-ctags/universal-ctags/universal-ctags": null
+      "universal-ctags/universal-ctags/universal-ctags": {
+        "options": {
+          "args": [
+            "HEAD"
+          ]
+        }
+      }
     },
     "cask": {
       "adoptopenjdk": {
@@ -588,7 +615,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.2.15",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "ea405af68664fd47a820a836b7e0b557e5af74d5",
+        "Homebrew/homebrew-core": "affeebfbade77e484c13d712ebd0b32f900495dc",
         "CLT": "11.4.1.0.1.1586360307",
         "Xcode": "11.4.1",
         "macOS": "10.15.4"

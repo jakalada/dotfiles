@@ -15,3 +15,12 @@ $ brew bundle
 ```
 $ brew bundle dump # will create Brewfile
 ```
+
+### そのほか
+
+vimがpython@3.8に依存している間は、必要なPythonのモジュールは下記のようにインストールする。
+
+```
+$ /usr/local/opt/python@3.8/bin/pip3 install neovim pynvim
+```
+
