@@ -31,7 +31,7 @@ set -x PATH "$GOPATH/bin" $PATH
 
 # Ruby on Homebrew
 set -x PATH '/usr/local/opt/ruby/bin' $PATH
-set -x PATH '/usr/local/lib/ruby/gems/2.6.0/bin' $PATH
+set -x PATH (gem environment gemdir)'/bin' $PATH
 
 # Android
 set -x ANDROID_HOME "$HOME/Library/Android/sdk"
