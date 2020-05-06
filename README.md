@@ -24,3 +24,10 @@ vimがpython@3.8に依存している間は、必要なPythonのモジュール�
 $ /usr/local/opt/python@3.8/bin/pip3 install neovim pynvim
 ```
 
+## anyenv
+
+### Install
+
+```
+$ anyenv init
+```
