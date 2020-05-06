@@ -39,7 +39,7 @@ set -x PATH "$ANDROID_HOME/tools/bin" $PATH
 set -x PATH "$ANDROID_HOME/platform-tools" $PATH
 
 # anyenv
-set -Ux fish_user_paths $HOME/.anyenv/bin $fish_user_paths
+set -x PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - fish | source
 
 # esp-idf
