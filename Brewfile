@@ -27,11 +27,11 @@ brew "ruby"
 brew "starship"
 brew "tig"
 brew "ttyrec"
-brew "vim", args: ["HEAD"]
+brew "vim"
 brew "wget"
 brew "yarn"
 brew "delphinus/sfmono-square/sfmono-square"
-brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew "universal-ctags/universal-ctags/universal-ctags"
 cask "adoptopenjdk"
 cask "adoptopenjdk10"
 cask "adoptopenjdk11"
