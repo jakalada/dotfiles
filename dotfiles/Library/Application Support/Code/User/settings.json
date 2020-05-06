@@ -178,7 +178,6 @@
     "prettier.disableLanguages": [
         "markdown"
     ],
-    "markdown.extension.showExplorer": true,
     "markdown.extension.tableFormatter.normalizeIndentation": true,
     "markdown.extension.toc.githubCompatibility": true,
     "editor.formatOnType": true,
@@ -186,24 +185,20 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Tomorrow",
-    "editor.fontSize": 16,
     "code-runner.executorMap": {
         "kotlin": "kotlinc -script"
     },
     "git.enableSmartCommit": true,
+    "editor.letterSpacing": 1.25,
+    "editor.lineHeight": 22,
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
     "editor.minimap.enabled": false,
     "[markdown]": {
         "editor.wordWrap": "bounded",
         "editor.wordWrapColumn": 80,
         "editor.quickSuggestions": true
     },
-    "json.schemas": [
-
-
-
-    
-    ],
+    "workbench.colorTheme": "Tomorrow"
 }
