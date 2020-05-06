@@ -1,204 +1,144 @@
 {
-    // vim key mappigns
-    "vim.insertModeKeyBindings": [],
-    "vim.insertModeKeyBindingsNonRecursive": [],
-    "vim.normalModeKeyBindings": [],
-    "vim.normalModeKeyBindingsNonRecursive": [
+  // vim key mappigns
+  "vim.insertModeKeyBindings": [],
+  "vim.insertModeKeyBindingsNonRecursive": [],
+  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "<Leader>"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<Esc>"],
+      "commands": [
         {
-            "before": [
-                "<Esc>"
-            ],
-            "commands": [
-                {
-                    "command": ":nohl"
-                }
-            ]
-        },
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "L"
-            ],
-            "after": [
-                "g",
-                "_"
-            ]
-        },
-        {
-            "before": [
-                "H"
-            ],
-            "after": [
-                "^"
-            ]
-        },
-        {
-            "before": [
-                "<CR>"
-            ],
-            "after": [
-                "<C-]>"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "r"
-            ],
-            "commands": [
-                "code-runner.run"
-            ]
-        },
-        {
-            "before": [
-                "v"
-            ],
-            "after": [
-                "v",
-                "h",
-                "l",
-            ]
-        },
-    ],
-    "vim.visualModeKeyBindings": [],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "L"
-            ],
-            "after": [
-                "g",
-                "_"
-            ]
-        },
-        {
-            "before": [
-                "H"
-            ],
-            "after": [
-                "^"
-            ]
-        },
-        {
-            "before": [
-                "j"
-            ],
-            "after": [
-                "g",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "k"
-            ],
-            "after": [
-                "g",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
-        },
-        {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
+          "command": ":nohl"
         }
-    ],
-    // vim settings
-    "vim.leader": " ",
-    "vim.cursorStylePerMode.insert": "line-thin",
-    "vim.cursorStylePerMode.normal": "block",
-    "vim.cursorStylePerMode.replace": "block-outline",
-    "vim.cursorStylePerMode.visual": "line-thin",
-    "vim.cursorStylePerMode.visualblock": "line-thin",
-    "vim.cursorStylePerMode.visualline": "line-thin",
-    "vim.changeWordIncludesWhitespace": true,
-    "vim.easymotion": true,
-    "vim.easymotionKeys": "asdfjkl",
-    "vim.easymotionMarkerBackgroundColor": "#004d40",
-    "vim.easymotionMarkerFontFamily": "Cica",
-    "vim.easymotionMarkerFontWeight": "bold",
-    "vim.easymotionMarkerForegroundColorOneChar": "#e0f2f1",
-    "vim.easymotionMarkerForegroundColorTwoChar": "#00796b",
-    "vim.easymotionMarkerHeight": 18,
-    "vim.easymotionMarkerYOffset": 2,
-    "vim.gdefault": true,
-    "vim.highlightedyank.enable": true,
-    "vim.history": 100,
-    "vim.hlsearch": true,
-    "vim.statusBarColorControl": true,
-    "vim.useSystemClipboard": true,
-    "vim.visualstar": true,
-    "workbench.colorCustomizations": {
-        "[Tomorrow]": {
-            "editor.background": "#f7f7f7"
-        },
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+      ]
     },
-    "vim.autoSwitchInputMethod.enable": true,
-    "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
-    "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
-    "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
-    "editor.fontFamily": "Cica",
-    "files.autoSave": "afterDelay",
-    "editor.renderWhitespace": "selection",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "prettier.disableLanguages": [
-        "markdown"
-    ],
-    "markdown.extension.tableFormatter.normalizeIndentation": true,
-    "markdown.extension.toc.githubCompatibility": true,
-    "editor.formatOnType": true,
-    "git.autofetch": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "window.zoomLevel": 0,
-    "code-runner.executorMap": {
-        "kotlin": "kotlinc -script"
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
     },
-    "git.enableSmartCommit": true,
-    "editor.letterSpacing": 1.25,
-    "editor.lineHeight": 22,
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
-    "[markdown]": {
-        "editor.wordWrap": "bounded",
-        "editor.wordWrapColumn": 80,
-        "editor.quickSuggestions": true
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
     },
-    "workbench.colorTheme": "Tomorrow"
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["<CR>"],
+      "after": ["<C-]>"]
+    },
+    {
+      "before": ["<leader>", "r"],
+      "commands": ["code-runner.run"]
+    },
+    {
+      "before": ["v"],
+      "after": ["v", "h", "l"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["L"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["H"],
+      "after": ["^"]
+    },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  // vim settings
+  "vim.leader": " ",
+  "vim.cursorStylePerMode.insert": "line-thin",
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.replace": "block-outline",
+  "vim.cursorStylePerMode.visual": "line-thin",
+  "vim.cursorStylePerMode.visualblock": "line-thin",
+  "vim.cursorStylePerMode.visualline": "line-thin",
+  "vim.changeWordIncludesWhitespace": true,
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "asdfjkl",
+  "vim.easymotionMarkerBackgroundColor": "#004d40",
+  "vim.easymotionMarkerFontFamily": "Cica",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "vim.easymotionMarkerForegroundColorOneChar": "#e0f2f1",
+  "vim.easymotionMarkerForegroundColorTwoChar": "#00796b",
+  "vim.easymotionMarkerHeight": 18,
+  "vim.easymotionMarkerYOffset": 2,
+  "vim.gdefault": true,
+  "vim.highlightedyank.enable": true,
+  "vim.history": 100,
+  "vim.hlsearch": true,
+  "vim.statusBarColorControl": true,
+  "vim.useSystemClipboard": true,
+  "vim.visualstar": true,
+  "workbench.colorCustomizations": {
+    "[Tomorrow]": {
+        "editor.background": "#f7f7f7"
+    },
+    "statusBar.background": "#005f5f",
+    "statusBar.noFolderBackground": "#005f5f",
+    "statusBar.debuggingBackground": "#005f5f"
+},
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  "editor.fontFamily": "Cica",
+  "files.autoSave": "afterDelay",
+  "editor.renderWhitespace": "selection",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "prettier.disableLanguages": ["markdown"],
+  "markdown.extension.tableFormatter.normalizeIndentation": true,
+  "markdown.extension.toc.githubCompatibility": true,
+  "editor.formatOnType": true,
+  "git.autofetch": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 0,
+  "code-runner.executorMap": {
+    "kotlin": "kotlinc -script"
+  },
+  "git.enableSmartCommit": true,
+  "editor.letterSpacing": 1.25,
+  "editor.lineHeight": 22,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 80,
+    "editor.quickSuggestions": true
+  },
+  "workbench.colorTheme": "Tomorrow",
+  "json.schemas": []
 }
