@@ -99,12 +99,12 @@
   "vim.visualstar": true,
   "workbench.colorCustomizations": {
     "[Tomorrow]": {
-        "editor.background": "#f7f7f7"
+      "editor.background": "#f7f7f7"
     },
     "statusBar.background": "#005f5f",
     "statusBar.noFolderBackground": "#005f5f",
     "statusBar.debuggingBackground": "#005f5f"
-},
+  },
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
   "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
