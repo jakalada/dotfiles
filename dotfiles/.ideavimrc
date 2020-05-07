@@ -66,6 +66,34 @@ nnoremap <silent> q :<C-U>close<CR>
 nnoremap n nzz
 nnoremap N Nzz
 
+nnoremap zg [z
+nnoremap zG ]z
+nnoremap zj zj
+nnoremap zk zk
+
+nnoremap zl zo
+nnoremap zL zO
+nnoremap zh zc
+nnoremap zH zC
+nnoremap zt za
+nnoremap zT zA
+
+nnoremap zM zM
+nnoremap zm zm
+nnoremap zR zR
+nnoremap zr zr
+
+nnoremap <silent> z0 :<C-U>setl foldlevel=0<CR>
+nnoremap <silent> z1 :<C-U>setl foldlevel=1<CR>
+nnoremap <silent> z2 :<C-U>setl foldlevel=2<CR>
+nnoremap <silent> z3 :<C-U>setl foldlevel=3<CR>
+nnoremap <silent> z4 :<C-U>setl foldlevel=4<CR>
+nnoremap <silent> z5 :<C-U>setl foldlevel=5<CR>
+nnoremap <silent> z6 :<C-U>setl foldlevel=6<CR>
+nnoremap <silent> z7 :<C-U>setl foldlevel=7<CR>
+nnoremap <silent> z8 :<C-U>setl foldlevel=8<CR>
+nnoremap <silent> z9 :<C-U>setl foldlevel=9<CR>
+
 " mapmode-v
 vnoremap > >gv
 vnoremap < <gv
@@ -79,4 +107,3 @@ inoremap <C-L> <Right>
 inoremap <C-H> <Left>
 inoremap <C-CR> <Esc>o
 inoremap <silent> <C-O> <C-O>:action CodeCompletion<CR>
-
