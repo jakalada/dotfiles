@@ -1,39 +1,39 @@
 [
-    {
-        "key": "q",
-        "command": "workbench.action.closeActiveEditor",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "Shift+Backspace",
-        "command": "workbench.action.openNextRecentlyUsedEditor",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "Backspace",
-        "command": "workbench.action.openPreviousRecentlyUsedEditor",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
-    },
-    {
-        "key": "ctrl+enter",
-        "command": "editor.action.insertLineAfter",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
-    },
-    {
-        "key": "shift+ctrl+enter",
-        "command": "editor.action.insertLineBefore",
-        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "shift+cmd+i",
-        "command": "outline.focus"
-    }
+  {
+    "key": "q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal'"
+  },
+  {
+    "key": "Backspace",
+    "command": "extension.vim_ctrl+o",
+    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl && vim.mode == 'Normal'"
+  },
+  {
+    "key": "Shift+Backspace",
+    "command": "extension.vim_ctrl+i",
+    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
+  },
+  {
+    "key": "shift+ctrl+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "outline.focus"
+  }
 ]
