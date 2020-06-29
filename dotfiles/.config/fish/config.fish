@@ -24,6 +24,7 @@ set -x LANG "ja_JP.UTF-8"
 set -x LC_ALL "ja_JP.UTF-8"
 
 set -x PATH '/usr/local/bin' $PATH
+set -x PATH '/usr/local/sbin' $PATH
 
 # Go
 set -x GOPATH "$HOME/go"
