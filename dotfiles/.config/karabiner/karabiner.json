@@ -35,11 +35,11 @@
             ]
           },
           {
-            "description": "Change cmd+l cmd+tab",
+            "description": "Change cmd+j cmd+tab",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "l",
+                  "key_code": "j",
                   "modifiers": {
                     "mandatory": ["left_command"]
                   }
@@ -55,11 +55,11 @@
             ]
           },
           {
-            "description": "Change cmd+h cmd+shift+tab",
+            "description": "Change cmd+k cmd+shift+tab",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "h",
+                  "key_code": "k",
                   "modifiers": {
                     "mandatory": ["left_command"]
                   }
