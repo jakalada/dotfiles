@@ -32,3 +32,6 @@
   mudge = git-lfs smudge -- %f
   rocess = git-lfs filter-process
   equired = true
+
+[pull]
+  rebase = false
