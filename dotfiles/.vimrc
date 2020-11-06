@@ -104,9 +104,10 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " pretteirがサポート
 
 " --------------------------------------------------
 " 移動 {{{2
-Plug 'kana/vim-altr'          " ユーザー定義の代替ファイル
-Plug 'kana/vim-gf-user'       " ユーザー定義のgf
-Plug 'thinca/vim-visualstar'  " *で選択中の文字列を検索
+Plug 'kana/vim-altr'              " ユーザー定義の代替ファイル
+Plug 'kana/vim-gf-user'           " ユーザー定義のgf
+Plug 'thinca/vim-visualstar'      " *で選択中の文字列を検索
+Plug 'easymotion/vim-easymotion'  " EasyMotion
 
 " --------------------------------------------------
 " UI {{{2
@@ -487,7 +488,7 @@ nnoremap <Leader>k <C-^>
 nnoremap <Backspace> <C-O>
 nnoremap <S-Backspace> <C-I>
 
-nnoremap <silent> <Leader><Leader> :<C-U>write<CR>
+nnoremap <silent> <Leader>w :<C-U>write<CR>
 
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
@@ -1271,6 +1272,10 @@ function! s:defx_my_settings() abort
   nnoremap <silent><buffer><expr> cd
         \ defx#do_action('change_vim_cwd')
 endfunction
+
+" --------------------------------------------------
+" EasyMotion {{{2
+map <Leader><Leader> <Plug>(easymotion-prefix)
 
 " ==================================================
 " Misc {{{1

@@ -3,6 +3,11 @@
 set surround
 " set multiple-cursors
 
+" IdeaVim-EasyMotion
+" REF: https://github.com/AlexPl292/IdeaVim-EasyMotion
+let mapleader=" "
+set easymotion
+
 " IdeaVIMがサポートしているオプション
 " REF: https://github.com/JetBrains/ideavim/blob/master/doc/set-commands.md
 set clipboard=unnamed
@@ -58,7 +63,7 @@ nnoremap K :<C-U>action QuickJavaDoc<CR>
 nnoremap <silent> <Space>r :<C-U>action Run<CR>
 nnoremap <silent> <Space>d :<C-U>action Debug<CR>
 nnoremap <silent> S :<C-U>action RenameElement<CR>
-nnoremap <silent> <Space><Space> :<C-U>action SaveAll<CR>
+nnoremap <silent> <Space>w :<C-U>action SaveAll<CR>
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
 nnoremap Q q
