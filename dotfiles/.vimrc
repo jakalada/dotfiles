@@ -488,7 +488,7 @@ nnoremap <Leader>k <C-^>
 nnoremap <Backspace> <C-O>
 nnoremap <S-Backspace> <C-I>
 
-nnoremap <silent> <Leader>w :<C-U>write<CR>
+nnoremap <silent> <Leader><Leader> :<C-U>write<CR>
 
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
@@ -1275,7 +1275,7 @@ endfunction
 
 " --------------------------------------------------
 " EasyMotion {{{2
-map <Leader><Leader> <Plug>(easymotion-prefix)
+map f <Plug>(easymotion-prefix)
 
 " ==================================================
 " Misc {{{1

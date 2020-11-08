@@ -88,8 +88,6 @@
   "vim.easymotionMarkerFontWeight": "bold",
   "vim.easymotionMarkerForegroundColorOneChar": "#e0f2f1",
   "vim.easymotionMarkerForegroundColorTwoChar": "#00796b",
-  "vim.easymotionMarkerHeight": 18,
-  "vim.easymotionMarkerYOffset": 2,
   "vim.gdefault": true,
   "vim.highlightedyank.enable": true,
   "vim.history": 100,
