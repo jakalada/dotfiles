@@ -289,6 +289,7 @@ if s:isgui
     let g:no_gvimrc_example=1
   endif
 
+  set background=dark
   colorscheme PaperColor
 
   if s:ismacunix
@@ -300,7 +301,6 @@ if s:isgui
     set guifont=Ricty\ Diminished\ 13.5
   endif
 
-  set linespace=8
   set guioptions=ciM
   set mouse=a
   set mousehide
@@ -487,8 +487,6 @@ nnoremap <Leader>k <C-^>
 
 nnoremap <Backspace> <C-O>
 nnoremap <S-Backspace> <C-I>
-
-nnoremap <silent> <Leader><Leader> :<C-U>write<CR>
 
 nnoremap <C-Up> <C-A>
 nnoremap <C-Down> <C-X>
@@ -754,13 +752,8 @@ let g:unite_source_directory_mru_long_limit = 1000
 
 nnoremap <SID>[unite] <Nop>
 xnoremap <SID>[unite] <Nop>
-nmap f <SID>[unite]
-xmap f <SID>[unite]
-
-nnoremap <SID>[unite-no-quit] <Nop>
-xnoremap <SID>[unite-no-quit] <Nop>
-nmap F <SID>[unite-no-quit]
-xmap F <SID>[unite-no-quit]
+nmap F <SID>[unite]
+xmap F <SID>[unite]
 
 nnoremap <silent> <SID>[unite]<Space> :<C-U>UniteResume<CR>
 
