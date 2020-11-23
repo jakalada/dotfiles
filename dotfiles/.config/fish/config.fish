@@ -1,5 +1,9 @@
 fish_vi_key_bindings
 
+# colors
+set fish_color_error red
+set fish_color_command green
+
 # fundle
 set fundle_plugins_dir "$HOME/.config/fundle_plugins"
 mkdir -p "$fundle_plugins_dir"
