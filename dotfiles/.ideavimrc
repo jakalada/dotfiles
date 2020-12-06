@@ -6,11 +6,10 @@ set surround
 " IdeaVim-EasyMotion
 " REF: https://github.com/AlexPl292/IdeaVim-EasyMotion
 "
-"let g:EasyMotion_do_mapping=0
-map f <Plug>(easymotion-prefix)
-set easymotion
-
+" let g:EasyMotion_do_mapping=0
+" map f <Plug>(easymotion-prefix)
 let mapleader=" "
+set easymotion
 
 " IdeaVIMがサポートしているオプション
 " REF: https://github.com/JetBrains/ideavim/blob/master/doc/set-commands.md
