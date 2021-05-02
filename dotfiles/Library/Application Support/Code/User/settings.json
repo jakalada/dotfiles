@@ -138,7 +138,6 @@
     "editor.quickSuggestions": true,
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "workbench.colorTheme": "Tomorrow",
   "json.schemas": [],
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -241,5 +240,6 @@
         "document"
       ]
     }
-  ]
+  ],
+  "workbench.colorTheme": "Tomorrow"
 }
