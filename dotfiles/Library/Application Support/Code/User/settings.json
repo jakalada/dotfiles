@@ -241,5 +241,12 @@
       ]
     }
   ],
-  "workbench.colorTheme": "Tomorrow"
+  "workbench.colorTheme": "Iceberg Light",
+  "csharp.semanticHighlighting.enabled": true,
+  "csharp.suppressDotnetInstallWarning": true,
+  "csharp.suppressBuildAssetsNotification": true,
+  "csharp.suppressDotnetRestoreNotification": true,
+  "csharp.suppressProjectJsonWarning": true,
+  "omnisharp.enableImportCompletion": true,
+  "omnisharp.useGlobalMono": "always"
 }
