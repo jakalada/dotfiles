@@ -8,7 +8,7 @@
   editor = vim
   pager = less
   excludesfile = ~/.gitignore.base
-	autocrlf = input
+	autoCRLF = false
   safecrlf = true
   precomposeunicode = true
 

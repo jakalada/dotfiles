@@ -122,7 +122,6 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
-  "window.zoomLevel": 0,
   "code-runner.executorMap": {
     "kotlin": "kotlinc -script"
   },
@@ -248,5 +247,7 @@
   "csharp.suppressDotnetRestoreNotification": true,
   "csharp.suppressProjectJsonWarning": true,
   "omnisharp.enableImportCompletion": true,
-  "omnisharp.useGlobalMono": "always"
+  "omnisharp.useGlobalMono": "always",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open"
 }
