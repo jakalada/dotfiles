@@ -49,6 +49,9 @@ set -x PATH "$ANDROID_HOME/platform-tools" $PATH
 set -x PATH "$HOME/.anyenv/bin" $PATH
 anyenv init - fish | source
 
+# rust up
+fish_add_path $HOME/.cargo/bin
+
 # esp-idf
 # (not set when using FreeRTOS)
 #export IDF_PATH=~/esp/esp-idf
@@ -61,6 +64,7 @@ alias lsc='colorls -lA --sd'
 alias ll='exa -l'
 alias ls='exa'
 alias cat='bat'
+alias asit='adb shell input text'
 
 
 # replacement
