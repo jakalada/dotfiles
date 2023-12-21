@@ -100,7 +100,9 @@
     },
     "statusBar.background": "#005f5f",
     "statusBar.noFolderBackground": "#005f5f",
-    "statusBar.debuggingBackground": "#005f5f"
+    "statusBar.debuggingBackground": "#005f5f",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
   },
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
@@ -211,11 +213,11 @@
   "csharp.suppressProjectJsonWarning": true,
   "omnisharp.enableImportCompletion": true,
   "omnisharp.useGlobalMono": "always",
-  "workbench.editor.untitled.hint": "hidden",
   "security.workspace.trust.untrustedFiles": "open",
   "json.maxItemsComputed": 10000,
   "workbench.editorAssociations": {
     "*.log": "default"
   },
-  "vim.easymotion": true
+  "vim.easymotion": true,
+  "workbench.editor.empty.hint": "hidden"
 }
