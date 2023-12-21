@@ -30,6 +30,9 @@ set -x LC_ALL "ja_JP.UTF-8"
 set -x PATH '/usr/local/bin' $PATH
 set -x PATH '/usr/local/sbin' $PATH
 
+# asdf
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
 # Go
 set -x GOPATH "$HOME/go"
 set -x PATH "$GOPATH/bin" $PATH
@@ -60,10 +63,6 @@ fish_add_path $HOME/.cargo/bin
 alias ph='peco_select_history'
 alias pd='peco_select_dirh'
 alias pg='peco_select_ghq_repository'
-alias lsc='colorls -lA --sd'
-alias ll='exa -l'
-alias ls='exa'
-alias cat='bat'
 alias asit='adb shell input text'
 
 
