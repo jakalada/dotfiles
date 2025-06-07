@@ -77,7 +77,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'airblade/vim-gitgutter'
 Plug 'cohama/agit.vim'
 Plug 'lambdalisue/vim-gita'
-Plug 'tpope/vim-fugitive'
 
 " --------------------------------------------------
 " 入力補助 {{{2
@@ -963,7 +962,6 @@ else
 endif
 
 let g:lightline.component_function = {
-      \   'fugitive': 'LightLineFugitive',
       \   'readonly': 'LightLineReadonly',
       \   'modified': 'LightLineModified',
       \   'filename': 'LightLineFilename',
@@ -982,7 +980,6 @@ let g:lightline.component_type = {
 let g:lightline.active = {}
 let g:lightline.active.left = [
       \   [ 'mode', 'paste' ],
-      \   [ 'fugitive', 'filename' ]
       \ ]
 let g:lightline.active.right = [
       \   [ 'lineinfo' ],
@@ -1011,14 +1008,6 @@ function! LightLineReadonly()
     else
         return ""
     endif
-endfunction
-
-function! LightLineFugitive()
-    if exists("*fugitive#head")
-        let _ = fugitive#head()
-        return strlen(_) ? ''._ : ''
-    endif
-    return ''
 endfunction
 
 function! LightLineFilename()
