@@ -134,7 +134,7 @@
   "editor.minimap.enabled": false,
   "[markdown]": {
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 80,
+    "editor.wordWrapColumn": 200,
     "editor.quickSuggestions": {
       "comments": "on",
       "strings": "on",
@@ -205,13 +205,12 @@
       "scopes": ["document"]
     }
   ],
-  "workbench.colorTheme": "Iceberg Light",
+  "workbench.colorTheme": "Iceberg",
   "csharp.semanticHighlighting.enabled": true,
   "csharp.suppressDotnetInstallWarning": true,
   "csharp.suppressBuildAssetsNotification": true,
   "csharp.suppressDotnetRestoreNotification": true,
   "csharp.suppressProjectJsonWarning": true,
-  "omnisharp.enableImportCompletion": true,
   "omnisharp.useGlobalMono": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "json.maxItemsComputed": 10000,
@@ -219,5 +218,7 @@
     "*.log": "default"
   },
   "vim.easymotion": true,
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "editor.wordWrapColumn": 200
 }

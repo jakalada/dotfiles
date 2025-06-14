@@ -11,6 +11,8 @@ relative_file_path_list=(
 ".config/fish/functions"
 ".config/karabiner/karabiner.json"
 ".config/nvim"
+".config/zed/keymap.json"
+".config/zed/settings.json"
 ".gitconfig"
 ".gitignore.base"
 ".hyper.js"

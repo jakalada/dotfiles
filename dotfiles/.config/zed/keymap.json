@@ -1,0 +1,55 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+//
+// Vimモードのデフォルトのkey bindings
+// `zed: open default keymap`
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // Put key bindings here if you want them to work in normal & visual mode.
+      // noremap j gj
+      "j": ["vim::Down", { "display_lines": true }],
+      // noremap k gk
+      "k": ["vim::Up", { "display_lines": true }],
+      // noremap L $
+      "L": "vim::EndOfLine",
+      // noremap H ^
+      "H": "vim::FirstNonWhitespace"
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      // nnoremap <silent> <Backspace> :<C-U>action Back<CR>
+      "backspace": "pane::GoBack",
+      // nnoremap <silent> <S-Backspace> :<C-U>action Forward<CR>
+      "shift-backspace": "pane::GoForward",
+      // nnoremap <silent> <C-H> :<C-U>action PreviousTab<CR>
+      "ctrl-h": "pane::ActivatePreviousItem",
+      // nnoremap <silent> <C-L> :<C-U>action NextTab<CR>
+      "ctrl-l": "pane::ActivateNextItem",
+      // nnoremap <silent> <Space><Space> :<C-U>action SaveAll<CR>
+      "space space": "workspace::Save",
+      // nnoremap <silent> q :<C-U>close<CR>
+      "q": ["pane::CloseActiveItem", { "close_pinned": false }]
+    }
+  }
+]
