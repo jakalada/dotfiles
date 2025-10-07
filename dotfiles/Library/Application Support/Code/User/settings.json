@@ -220,5 +220,6 @@
   "vim.easymotion": true,
   "workbench.editor.empty.hint": "hidden",
   "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
-  "editor.wordWrapColumn": 200
+  "editor.wordWrapColumn": 200,
+  "godotTools.editorPath.godot4": "/Applications/Godot.app/Contents/MacOS/Godot"
 }
