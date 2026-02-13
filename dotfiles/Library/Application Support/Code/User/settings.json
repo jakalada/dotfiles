@@ -115,7 +115,6 @@
   "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "prettier.disableLanguages": ["markdown"],
   "markdown.extension.tableFormatter.normalizeIndentation": true,
   "markdown.extension.toc.githubCompatibility": true,
   "editor.formatOnType": true,
@@ -151,61 +150,6 @@
   "vim.argumentObjectClosingDelimiters": [")", "]", "}"],
   "vim.argumentObjectOpeningDelimiters": ["(", "[", "{"],
   "vim.digraphs": {},
-  "gitlens.codeLens.scopesByLanguage": [
-    {
-      "language": "azure-pipelines",
-      "scopes": ["document"]
-    },
-    {
-      "language": "ansible",
-      "scopes": ["document"]
-    },
-    {
-      "language": "css",
-      "scopes": ["document"]
-    },
-    {
-      "language": "html",
-      "scopes": ["document"]
-    },
-    {
-      "language": "json",
-      "scopes": ["document"]
-    },
-    {
-      "language": "jsonc",
-      "scopes": ["document"]
-    },
-    {
-      "language": "less",
-      "scopes": ["document"]
-    },
-    {
-      "language": "postcss",
-      "scopes": ["document"]
-    },
-    {
-      "language": "python",
-      "symbolScopes": ["!Module"]
-    },
-    {
-      "language": "scss",
-      "scopes": ["document"]
-    },
-    {
-      "language": "stylus",
-      "scopes": ["document"]
-    },
-    {
-      "language": "vue",
-      "scopes": ["document"]
-    },
-    {
-      "language": "yaml",
-      "scopes": ["document"]
-    }
-  ],
-  "workbench.colorTheme": "Iceberg",
   "csharp.semanticHighlighting.enabled": true,
   "csharp.suppressDotnetInstallWarning": true,
   "csharp.suppressBuildAssetsNotification": true,
@@ -229,8 +173,6 @@
     "cursor-workspace": true
   },
   "editor.inlineSuggest.edits.showCollapsed": true,
-  "editor.wordWrapColumn": 300,
-  "files.dialog.defaultPath": "~/Desktop",
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.enable": {
     "*": true,
@@ -239,7 +181,7 @@
     "scminput": false
   },
   "editor.editContext": false,
-  "extensions.autoUpdate": false
+  "extensions.autoUpdate": false,
   "editor.wordWrapColumn": 200,
   "godotTools.editorPath.godot4": "/Applications/Godot.app/Contents/MacOS/Godot"
 }
