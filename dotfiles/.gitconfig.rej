@@ -1,0 +1,12 @@
+@@ -24,9 +24,9 @@
+ [alias]
+   log = log --date=local
+   br = branch -v
+-  co = checkout
+   st = status
+-  change = commit -m "change"
++  sw = switch
++  rs = restore
+ 
+ [filter "lfs"]
+   lean = git-lfs clean -- %f

@@ -1,0 +1,9 @@
+@@ -204,7 +204,7 @@
+   "editor.minimap.enabled": false,
+   "[markdown]": {
+     "editor.wordWrap": "bounded",
+-    "editor.wordWrapColumn": 80,
++    "editor.wordWrapColumn": 300,
+     "editor.quickSuggestions": {
+       "comments": "on",
+       "strings": "on",

@@ -25,7 +25,6 @@ relative_file_path_list=(
 ".vim"
 ".vimrc"
 ".xvimrc"
-".obsidian.vimrc"
 )
 
 cd $(dirname $0)

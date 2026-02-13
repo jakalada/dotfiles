@@ -1,0 +1,11 @@
+@@ -64,7 +64,10 @@
+ alias pd='peco_select_dirh'
+ alias pg='peco_select_ghq_repository'
+ alias asit='adb shell input text'
++alias git-force-delete-branch-ignore-develop='git branch | grep -v "develop" | xargs git branch -D'
+ 
++alias npx='echo "WARNING: npx は実行しないでください" && false'
++alias npm='echo "WARNING: npm は実行しないでください" && false'
+ 
+ # replacement
+ if which rmtrash >/dev/null

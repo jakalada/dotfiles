@@ -144,7 +144,7 @@
   },
   "json.schemas": [],
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.validate": ["typescript", "typescriptreact"],
   "editor.accessibilitySupport": "off",
@@ -219,27 +219,7 @@
   },
   "vim.easymotion": true,
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Default Dark+",
-  "markdown.extension.tableFormatter.enabled": false,
-  "redhat.telemetry.enabled": false,
-  "chat.mcp.discovery.enabled": {
-    "claude-desktop": true,
-    "windsurf": true,
-    "cursor-global": true,
-    "cursor-workspace": true
-  },
-  "editor.inlineSuggest.edits.showCollapsed": true,
-  "editor.wordWrapColumn": 300,
-  "files.dialog.defaultPath": "~/Desktop",
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": true,
-    "scminput": false
-  },
-  "editor.editContext": false,
-  "extensions.autoUpdate": false
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
   "editor.wordWrapColumn": 200,
   "godotTools.editorPath.godot4": "/Applications/Godot.app/Contents/MacOS/Godot"
 }
